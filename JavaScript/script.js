@@ -1,2 +1,9 @@
-document.body.innerHTML = '<h1>Hello from JavaScript</h1>'
-console.log('test')
+//variable
+alert(1)
+var name = 'Sam'
+const lastName = 'Sad'
+let age = 27
+
+name = 'Shved'
+
+console.log(name);
