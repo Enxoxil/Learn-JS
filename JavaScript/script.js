@@ -1,9 +1,2 @@
-//variable
-alert(1)
-var name = 'Sam'
-const lastName = 'Sad'
-let age = 27
+// 1 lesson with learn.js
 
-name = 'Shved'
-
-console.log(name);
