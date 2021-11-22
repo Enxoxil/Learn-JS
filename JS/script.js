@@ -1,5 +1,4 @@
-// 1 lesson with learn.js
-
-var into;
-var start;
-var prog;
+"use strict";
+let a;
+a = 7;
+console.log(a);
