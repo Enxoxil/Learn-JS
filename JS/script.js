@@ -5,10 +5,10 @@ let numberOfFilms;
 
 
 function start() {
-    numberOfFilms = +prompt("Скольк фильмов вы уже посмотрели?", '');
+    numberOfFilms = prompt("Скольк фильмов вы уже посмотрели?", '');
 
-    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)){
-        numberOfFilms = +prompt("Скольк фильмов вы уже посмотрели?", '');
+    while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms) ){
+        numberOfFilms = prompt("Скольк фильмов вы уже посмотрели?", '');
     }
 }
 start();

@@ -15,10 +15,76 @@
 //     return a + b 
 // };
 
-const num = 12.2;
-let test = "fr 12.2px";
-console.log(parseFloat(test));
-console.log(parseInt(test));
+function last (lang, callback){
+    console.log(`I learn ${lang},`);
+    callback();
+}
 
-console.log(Math.round(num));
+function first (){
+    console.log("HTML, CSS")
+}
 
+last("JS", first);
+
+
+const obj = {
+    name : "test",
+    width : 1024,
+    height : 1024,
+    colors : {
+        border : "black",
+        bg : "red",
+        size :  {
+            big : "veryBig",
+            little : "veryLittle",
+            center : {
+                align : "center",
+                margin : "auto"
+            }
+        }
+    }
+};
+
+// console.log(obj["colors"]["border"]); 
+// delete obj.name;
+// obj.name = "test2";
+// console.log(obj);
+
+let counter = 0;
+let objectFirst;
+let objectSecond;
+let objectThird;
+let objectFourty;
+for (let key in obj){
+    if (typeof(obj[key]) === 'object'){ 
+        objectFirst = key;
+        for (let i in obj[key]){
+            if(typeof(obj[key][i]) === 'object'){
+                objectSecond = i;
+                for(let y in obj[key][i]){
+                    if(typeof(obj[key][i][y]) === 'object'){
+                        objectThird = y;
+                        for(let z in obj[key][i][y]){
+                            console.log(`Свойство ${z} имеет значение ${obj[key][i][y][z]}`);
+                            counter++; 
+                        }
+                    } else {
+                    console.log(`Свойство ${y} имеет значение ${obj[key][i][y]}`);
+                    counter++;   
+                    }
+                }
+            } else {
+                console.log(`Свойство ${i} имеет значение ${obj[key][i]}`);
+                counter++;
+            }
+        }
+    } else {
+        console.log(`Свойство ${key} имеет значение ${obj[key]}`)   
+        counter++;
+    }
+}
+
+
+console.log(counter);
+console.log(objectFirst);
+console.log(Object.keys(obj.colors));
