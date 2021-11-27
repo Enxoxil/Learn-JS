@@ -26,6 +26,7 @@ function first (){
 
 last("JS", first);
 
+//object
 
 const obj = {
     name : "test",
