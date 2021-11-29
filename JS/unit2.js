@@ -68,28 +68,27 @@
 //     console.log(t + +t2);
 // }
 
-let firstName = document.querySelector(".firstName");
-let lastName = document.querySelector(".lastName");
-let age = document.querySelector(".age");
-let work = document.querySelector(".work");
+
 let btn = document.querySelector(".btn");
 
 btn.onclick = function () {
-  let a = firstName.value;
-  let b = lastName.value;
-  let c = age.value;
-  let d = work.value;
+  let firstName = document.querySelector(".firstName").value;
+  let lastName = document.querySelector(".lastName").value;
+  let age = +document.querySelector(".age").value;
+  let work = document.querySelector(".work").value;
+
   console.log(
     "Уважаемый " +
-      a +
+    firstName +
       " " +
-      b +
+      lastName +
       ", " +
       "ваш возраст " +
-      c +
+      age +
       " years. " +
       "Ваша профессия: " +
-      d +
+      work +
       "."
   );
 };
+
