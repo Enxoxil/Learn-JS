@@ -25,9 +25,11 @@ btn.onclick = function () {
     let input = +document.querySelector('.input').value;
     let out = document.querySelector('.out');
     console.log(input);
-    if ((2021 - input) >= 18) {
-        out.innerHTML = 1;
-    } else {
+    if (input < 0) {
+        out.innerHTML = "m";
+    } else if (input == 0){
         out.innerHTML = 0;
+    } else {
+        out.innerHTML = 1;
     }
 };
