@@ -22,12 +22,8 @@ const btn = document.querySelector(".btn");
 // };
 
 btn.onclick = function () {
-    let input = +document.querySelector('.input').value;
+    let input1 = +document.querySelector('.input1').value;
+    let input2 = +document.querySelector('.input2').value;
     let out = document.querySelector('.out');
-    console.log(input);
-    if ((input % 2) == 0) {
-        out.innerHTML = "even";
-    } else {
-        out.innerHTML = "odd";
-    }
+    out.innerHTML = input1 ** input2;
 };
