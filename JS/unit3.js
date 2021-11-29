@@ -25,11 +25,9 @@ btn.onclick = function () {
     let input = +document.querySelector('.input').value;
     let out = document.querySelector('.out');
     console.log(input);
-    if (input < 0) {
-        out.innerHTML = "m";
-    } else if (input == 0){
-        out.innerHTML = 0;
+    if ((input % 2) == 0) {
+        out.innerHTML = "even";
     } else {
-        out.innerHTML = 1;
+        out.innerHTML = "odd";
     }
 };
