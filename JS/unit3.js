@@ -70,8 +70,22 @@ const btn = document.querySelector(".btn");
 // };
 
 btn.onclick = function () {
-    let input = +document.querySelector('.input').value;
+    let input1 = +document.querySelector('.input1').value;
+    let input2 = +document.querySelector('.input2').value;
+    let select = document.querySelector('.select').value;
     let out = document.querySelector('.out');
-    out.innerHTML = typeof(input);
-
+    if (select == '+') {
+        out.innerHTML = input1 + input2;
+    } else if (select == '-') {
+        out.innerHTML = input1 - input2;
+    } else if (select == '*') { 
+        out.innerHTML = input1 * input2;
+    } else if (select == '/') {
+        out.innerHTML = input1 / input2;
+    } else if (select == '%') {
+        out.innerHTML = input1 % input2;
+    } else {
+        out.innerHTML = "Error!";
+    }
+        
 };
