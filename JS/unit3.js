@@ -22,8 +22,20 @@ const btn = document.querySelector(".btn");
 // };
 
 btn.onclick = function () {
-    let input1 = +document.querySelector('.input1').value;
-    let input2 = +document.querySelector('.input2').value;
+    let select = +document.querySelector('.select').value;
     let out = document.querySelector('.out');
-    out.innerHTML = input1 ** input2;
+    switch (select) {
+        case 1:
+            out.innerHTML = 'one';
+            break;
+        case 2:
+            out.innerHTML = 'two';
+            break;
+        case 3:
+            out.innerHTML = 'three';
+            break;
+        default:
+            out.innerHTML = 'null';
+            break;
+    }
 };
