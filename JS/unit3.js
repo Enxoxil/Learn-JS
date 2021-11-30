@@ -62,9 +62,16 @@ const btn = document.querySelector(".btn");
 //   out.innerHTML = select;
 // };
 
-let selector = document.querySelector(".select");
-selector.onchange = function () {
-  let select = +document.querySelector(".select").value;
-  let out = document.querySelector(".out");
-  out.innerHTML = select;
+// let selector = document.querySelector(".select");
+// selector.onchange = function () {
+//   let select = +document.querySelector(".select").value;
+//   let out = document.querySelector(".out");
+//   out.innerHTML = select;
+// };
+
+btn.onclick = function () {
+    let input = +document.querySelector('.input').value;
+    let out = document.querySelector('.out');
+    out.innerHTML = typeof(input);
+
 };
