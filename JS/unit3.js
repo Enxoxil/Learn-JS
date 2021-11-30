@@ -40,7 +40,6 @@ const btn = document.querySelector(".btn");
 //     }
 // };
 
-
 // btn.onclick = function () {
 //     let input = document.querySelector('.input').value;
 //     let out = document.querySelector('.out');
@@ -56,9 +55,16 @@ const btn = document.querySelector(".btn");
 //     }
 // };
 
-btn.onclick = function () {
-    let select = +document.querySelector('.select').value;
-    let out = document.querySelector('.out');
+// btn.onclick = function () {
+//   let select = +document.querySelector(".select").value;
+//   let out = document.querySelector(".out");
 
-    out.innerHTML = select;
-}
+//   out.innerHTML = select;
+// };
+
+let selector = document.querySelector(".select");
+selector.onchange = function () {
+  let select = +document.querySelector(".select").value;
+  let out = document.querySelector(".out");
+  out.innerHTML = select;
+};
