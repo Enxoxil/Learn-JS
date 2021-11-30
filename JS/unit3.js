@@ -41,18 +41,24 @@ const btn = document.querySelector(".btn");
 // };
 
 
+// btn.onclick = function () {
+//     let input = document.querySelector('.input').value;
+//     let out = document.querySelector('.out');
+
+//     if (input >= 1 && input <= 32){
+//         out.innerHTML = 1;
+//     } else if (input >= 33 && input <= 43){
+//         out.innerHTML = 2;
+//     } else if (input >= 44 && input <= 64){
+//         out.innerHTML = 3;
+//     } else {
+//         out.innerHTML = 0;
+//     }
+// };
+
 btn.onclick = function () {
-    let input = document.querySelector('.input').value;
+    let select = +document.querySelector('.select').value;
     let out = document.querySelector('.out');
 
-    if (input >= 1 && input <= 32){
-        out.innerHTML = 1;
-    } else if (input >= 33 && input <= 43){
-        out.innerHTML = 2;
-    } else if (input >= 44 && input <= 64){
-        out.innerHTML = 3;
-    } else {
-        out.innerHTML = 0;
-    }
-};
-
+    out.innerHTML = select;
+}
