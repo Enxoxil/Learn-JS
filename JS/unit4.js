@@ -34,10 +34,7 @@ let button = document.querySelector(".button");
 
 //t5
 
-btn.onclick = () => {
-  if (button.checked){
-    out.innerHTML = button.value ;
-  } else {
-    out.innerHTML = 'false';
-  }
+btn.onclick = (event) => {
+  event.preventDefault();
+  out.innerHTML = button.value;
 };
