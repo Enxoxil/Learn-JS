@@ -17,7 +17,13 @@ let form = document.querySelector(".form");
 
 //u4 t1
 
-btn.onclick = () => {
-  out.innerHTML = 1;
+// btn.onclick = () => {
+//   out.innerHTML = 1;
+// };
+
+//t2
+
+input.onclick = () => {
+  out.innerHTML = 2;
 };
 
