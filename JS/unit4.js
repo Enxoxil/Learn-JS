@@ -24,12 +24,20 @@ let button = document.querySelector(".button");
 
 //t4
 
+// btn.onclick = () => {
+//   if (button.checked){
+//     out.innerHTML = 'true';
+//   } else {
+//     out.innerHTML = 'false';
+//   }
+// };
+
+//t5
+
 btn.onclick = () => {
   if (button.checked){
-    out.innerHTML = 'true';
+    out.innerHTML = button.value ;
   } else {
     out.innerHTML = 'false';
   }
 };
-
-
