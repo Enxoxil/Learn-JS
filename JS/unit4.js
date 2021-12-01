@@ -36,5 +36,9 @@ let button = document.querySelector(".button");
 
 btn.onclick = (event) => {
   event.preventDefault();
-  out.innerHTML = button.value;
+  if (button.value.length >= 6) {
+    out.innerHTML = 1;
+  } else {
+    out.innerHTML = 0;
+  }
 };
