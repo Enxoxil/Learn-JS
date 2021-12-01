@@ -4,6 +4,7 @@ let out = document.querySelector(".out");
 let typeOf = document.querySelector(".typeof");
 let input = document.querySelector(".input");
 let form = document.querySelector(".form");
+let button = document.querySelector(".button");
 
 // let btnOnClick = (document.querySelector(".btn").onclick = (event) => {
 //   event.preventDefault();
@@ -18,12 +19,17 @@ let form = document.querySelector(".form");
 //u4 t1
 
 // btn.onclick = () => {
-//   out.innerHTML = 1;
+//   alert(1);
 // };
 
-//t2
+//t4
 
-input.onclick = () => {
-  out.innerHTML = 2;
+btn.onclick = () => {
+  if (button.checked){
+    out.innerHTML = 'true';
+  } else {
+    out.innerHTML = 'false';
+  }
 };
+
 
