@@ -33,12 +33,25 @@ let button = document.querySelector(".button");
 // };
 
 //t5
+//t6,7
+// btn.onclick = (event) => {
+//   event.preventDefault();
+//   if (button.value.length >= 6) {
+//     out.innerHTML = 1;
+//   } else {
+//     out.innerHTML = 0;
+//   }
+// };
+
+//t8
 
 btn.onclick = (event) => {
   event.preventDefault();
-  if (button.value.length >= 6) {
-    out.innerHTML = 1;
-  } else {
-    out.innerHTML = 0;
-  }
+  out.innerHTML =
+    '<input type="text" class="i-81"><button class="b-81">GO</button>';
+  let b81 = (document.querySelector(".b-81").onclick = (event) => {
+    event.preventDefault();
+    let i81 = document.querySelector(".i-81").value;
+    typeOf.innerHTML = i81;
+  });
 };
