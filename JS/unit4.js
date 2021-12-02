@@ -76,8 +76,12 @@ let button = document.querySelector(".button");
 //   out.innerHTML = document.querySelector('.date').value;
 // };
 //t13
-document.querySelector(".range").oninput = (event) => {
-  event.preventDefault();
-  let range =document.querySelector(".range");
-  out.innerHTML = range.value;
+// document.querySelector(".range").oninput = (event) => {
+//   event.preventDefault();
+//   let range =document.querySelector(".range");
+//   out.innerHTML = range.value;
+// };
+//t14
+btn.onclick = () => {
+  document.querySelector('.textarea').value = button.value;
 };
