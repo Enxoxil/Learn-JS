@@ -60,7 +60,7 @@ let button = document.querySelector(".button");
 //   event.preventDefault();
 //   if (input.checked) {
 //     out.innerHTML = input.value;
-//   } else { 
+//   } else {
 //     out.innerHTML = 0;
 //   }
 // };
@@ -71,7 +71,13 @@ let button = document.querySelector(".button");
 //   document.querySelector('.color1').value = document.querySelector('.color').value;
 // };
 //t12
-btn.onclick = (event) => {
+// btn.onclick = (event) => {
+//   event.preventDefault();
+//   out.innerHTML = document.querySelector('.date').value;
+// };
+//t13
+document.querySelector(".range").oninput = (event) => {
   event.preventDefault();
-  out.innerHTML = document.querySelector('.date').value;
+  let range =document.querySelector(".range");
+  out.innerHTML = range.value;
 };
