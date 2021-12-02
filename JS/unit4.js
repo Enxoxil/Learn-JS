@@ -55,7 +55,7 @@ let button = document.querySelector(".button");
 //     typeOf.innerHTML = i81;
 //   });
 // };
-
+//t9
 // btn.onclick = (event) => {
 //   event.preventDefault();
 //   if (input.checked) {
@@ -64,8 +64,14 @@ let button = document.querySelector(".button");
 //     out.innerHTML = 0;
 //   }
 // };
-
+//t10,11
+// btn.onclick = (event) => {
+//   event.preventDefault();
+//   btn.style.backgroundColor = document.querySelector('.color').value;
+//   document.querySelector('.color1').value = document.querySelector('.color').value;
+// };
+//t12
 btn.onclick = (event) => {
   event.preventDefault();
-  btn.style.backgroundColor = document.querySelector('.color').value;
+  out.innerHTML = document.querySelector('.date').value;
 };
