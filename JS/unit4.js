@@ -56,11 +56,16 @@ let button = document.querySelector(".button");
 //   });
 // };
 
+// btn.onclick = (event) => {
+//   event.preventDefault();
+//   if (input.checked) {
+//     out.innerHTML = input.value;
+//   } else { 
+//     out.innerHTML = 0;
+//   }
+// };
+
 btn.onclick = (event) => {
   event.preventDefault();
-  if (input.checked) {
-    out.innerHTML = input.value;
-  } else { 
-    out.innerHTML = 0;
-  }
+  btn.style.backgroundColor = document.querySelector('.color').value;
 };
