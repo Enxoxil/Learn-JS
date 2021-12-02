@@ -56,7 +56,8 @@ let button = document.querySelector(".button");
 //   });
 // };
 
-btn.onclick = () => {
+btn.onclick = (event) => {
+  event.preventDefault();
   if (input.checked) {
     out.innerHTML = input.value;
   } else { 
