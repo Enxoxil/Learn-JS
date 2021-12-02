@@ -82,7 +82,12 @@ let button = document.querySelector(".button");
 //   out.innerHTML = range.value;
 // };
 //14,15
+// btn.onclick = () => {
+//   document.querySelector('.textarea').value = button.value;
+//   out.innerHTML = button.value;
+// };
+
+//16
 btn.onclick = () => {
-  document.querySelector('.textarea').value = button.value;
-  out.innerHTML = button.value;
+  out.innerHTML = document.querySelector('.select').value;
 };
