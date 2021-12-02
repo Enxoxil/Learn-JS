@@ -93,6 +93,10 @@ let button = document.querySelector(".button");
 // };
 //17
 
+// document.querySelector('.select').onchange = () => {
+//   out.innerHTML = document.querySelector('.select').value;
+// };
+//18
 document.querySelector('.select').onchange = () => {
-  out.innerHTML = document.querySelector('.select').value;
-};
+  document.querySelector('.textarea').value = document.querySelector('.select').value;
+}
