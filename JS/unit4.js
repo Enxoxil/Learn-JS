@@ -81,7 +81,8 @@ let button = document.querySelector(".button");
 //   let range =document.querySelector(".range");
 //   out.innerHTML = range.value;
 // };
-//t14
+//14,15
 btn.onclick = () => {
   document.querySelector('.textarea').value = button.value;
+  out.innerHTML = button.value;
 };
