@@ -1,19 +1,24 @@
 //lesson
 let btn = document.querySelector(".btn");
-let out = document.querySelector(".out");
+let out = document.querySelector("#out");
 let typeOf = document.querySelector(".typeof");
 let input = document.querySelector(".input");
-let form = document.querySelector(".form");
-let button = document.querySelector(".button");
+let form = document.querySelector(".formClass");
+let pass = document.querySelector(".pass");
+
+//20
+
+btn.onclick = (event) => {
+  event.preventDefault();
+  typeOf.innerHTML = 'inner' + form.elements.textarea1.value + ' ' + form.elements.pass1.value;
+
+};
+
+//20
 
 // let btnOnClick = (document.querySelector(".btn").onclick = (event) => {
 //   event.preventDefault();
-//   let pass = password.value;
-
-//   form.elements.input.value = "YE BABY!";
-
-//   typeOf.innerHTML = typeof form.elements.input.value;
-//   out.innerHTML = pass;
+//   console.log(form.elements.textarea.value);
 // });
 
 //u4 t1
@@ -102,7 +107,7 @@ let button = document.querySelector(".button");
 // };
 
 //19
-btn.onclick = (event) => {
-  event.preventDefault();
-  out.innerHTML = document.querySelector('.textarea').value + ' ' + document.querySelector('.button').value;
-};
+// btn.onclick = (event) => {
+//   event.preventDefault();
+//   out.innerHTML = document.querySelector('.textarea').value + ' ' + document.querySelector('.button').value;
+// };
