@@ -97,6 +97,12 @@ let button = document.querySelector(".button");
 //   out.innerHTML = document.querySelector('.select').value;
 // };
 //18
-document.querySelector('.select').onchange = () => {
-  document.querySelector('.textarea').value = document.querySelector('.select').value;
-}
+// document.querySelector('.select').onchange = () => {
+//   document.querySelector('.textarea').value = document.querySelector('.select').value;
+// };
+
+//19
+btn.onclick = (event) => {
+  event.preventDefault();
+  out.innerHTML = document.querySelector('.textarea').value + ' ' + document.querySelector('.button').value;
+};
