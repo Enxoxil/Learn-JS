@@ -88,6 +88,11 @@ let button = document.querySelector(".button");
 // };
 
 //16
-btn.onclick = () => {
+// btn.onclick = () => {
+//   out.innerHTML = document.querySelector('.select').value;
+// };
+//17
+
+document.querySelector('.select').onchange = () => {
   out.innerHTML = document.querySelector('.select').value;
 };
