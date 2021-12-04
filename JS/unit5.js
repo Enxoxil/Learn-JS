@@ -59,16 +59,39 @@
 // });
 
 //t4
+// let strin = " ";
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   if (strin == " ") {
+//     for (let i = 77; i >= 35 && i < 78; i = i - 3) {
+//       strin += i + "_";
+//     }
+//   } else {
+//     strin = " ";
+//     for (let i = 77; i >= 35 && i < 78; i = i - 3) {
+//       strin += i + "_";
+//     }
+//   }
+//   let out = (document.querySelector(".out").innerHTML = strin);
+// });
+//t5
 let strin = " ";
 let btn = (document.querySelector(".btn").onclick = () => {
   if (strin == " ") {
-    for (let i = 77; i >= 35 && i < 78; i = i - 3) {
-      strin += i + "_";
+    for (let i = 0; i <= 17; i++) {
+      if (i % 2 == 0) {
+        strin += i + "_**";
+      } else {
+        strin += i + "_*";
+      }
     }
   } else {
     strin = " ";
-    for (let i = 77; i >= 35 && i < 78; i = i - 3) {
-      strin += i + "_";
+    for (let i = 0; i <= 17; i++) {
+      if (i % 2 == 0) {
+        strin += i + "_**";
+      } else {
+        strin += i + "_*";
+      }
     }
   }
   let out = (document.querySelector(".out").innerHTML = strin);
