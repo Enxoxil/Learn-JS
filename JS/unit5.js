@@ -33,17 +33,27 @@
 // });
 
 //t2
+// let strin = "";
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   if (strin == "") {
+//     for (let i = 0; i < 123; i = i + 2) {
+//       strin += i + " ";
+//     }
+//   } else {
+//     strin = "";
+//     for (let i = 0; i < 123; i = i + 2) {
+//       strin += i + " ";
+//     }
+//   }
+//   let out = (document.querySelector(".out").innerHTML = strin);
+// });
+
+//t3
+
 let strin = "";
 let btn = (document.querySelector(".btn").onclick = () => {
-  if (strin == "") {
-    for (let i = 0; i < 123; i = i + 2) {
-      strin += i + " ";
-    }
-  } else {
-    strin = "";
-    for (let i = 0; i < 123; i = i + 2) {
-      strin += i + " ";
-    }
+  for (let i = 25; i > 6 ; i--) {
+    strin += i + " ";
   }
   let out = (document.querySelector(".out").innerHTML = strin);
 });
