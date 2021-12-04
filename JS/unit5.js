@@ -50,10 +50,26 @@
 
 //t3
 
-let strin = "";
+// let strin = "";
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   for (let i = 25; i > 6 ; i--) {
+//     strin += i + " ";
+//   }
+//   let out = (document.querySelector(".out").innerHTML = strin);
+// });
+
+//t4
+let strin = " ";
 let btn = (document.querySelector(".btn").onclick = () => {
-  for (let i = 25; i > 6 ; i--) {
-    strin += i + " ";
+  if (strin == " ") {
+    for (let i = 77; i >= 35 && i < 78; i = i - 3) {
+      strin += i + "_";
+    }
+  } else {
+    strin = " ";
+    for (let i = 77; i >= 35 && i < 78; i = i - 3) {
+      strin += i + "_";
+    }
   }
   let out = (document.querySelector(".out").innerHTML = strin);
 });
