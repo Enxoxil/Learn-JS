@@ -1,16 +1,32 @@
 let out = document.querySelector(".out");
 let strin = "";
 
-//t9
+//t10
 let btn = (document.querySelector(".btn").onclick = () => {
-    for (let i = 1; i <= 5; i++){
-        for (let k = 1; k <= i; k++){
-            strin += `${k} `;
+    strin = '';
+    for (let i = 0; i < 5; i++){
+        for (let k = 1; k <= 10; k++){
+            if ( k < 10) {
+                strin += `${i}${k} `;
+            } else {
+                strin += `${i}0`;
+            }
         }
     strin += '<br>';
     }
 out.innerHTML = strin;
 });
+
+//t9
+// let btn = (document.querySelector(".btn").onclick = () => {
+//     for (let i = 1; i <= 5; i++){
+//         for (let k = 1; k <= i; k++){
+//             strin += `${k} `;
+//         }
+//     strin += '<br>';
+//     }
+// out.innerHTML = strin;
+// });
 
 //t8
 
