@@ -9,7 +9,7 @@ let btn = (document.querySelector(".btn").onclick = () => {
             if ( k < 10) {
                 strin += `${i}${k} `;
             } else {
-                strin += `${i}0`;
+                strin += `${i+1}0`;
             }
         }
     strin += '<br>';
