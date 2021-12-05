@@ -74,25 +74,64 @@
 //   let out = (document.querySelector(".out").innerHTML = strin);
 // });
 //t5
-let strin = " ";
+// let strin = " ";
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   if (strin == " ") {
+//     for (let i = 0; i <= 17; i++) {
+//       if (i % 2 == 0) {
+//         strin += i + "_**";
+//       } else {
+//         strin += i + "_*";
+//       }
+//     }
+//   } else {
+//     strin = " ";
+//     for (let i = 0; i <= 17; i++) {
+//       if (i % 2 == 0) {
+//         strin += i + "_**";
+//       } else {
+//         strin += i + "_*";
+//       }
+//     }
+//   }
+//   let out = (document.querySelector(".out").innerHTML = strin);
+// });
+
+//t6
+// let strin = "";
+// let out = document.querySelector(".out");
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   let i = document.querySelector(".input").value;
+//   if (strin == "") {
+//     for (let x = 0; x <= i - 1 && i < 10; x++) {
+//       strin += "******";
+//       strin += "<br>";
+//     }
+//   } else {
+//     strin = "";
+//     for (let x = 0; x <= i - 1 && i < 10; x++) {
+//       strin += "******";
+//       strin += "<br>";
+//     }
+//   }
+//   out.innerHTML = strin;
+// });
+
+//t7
+
+let strin = "";
+let out = document.querySelector(".out");
 let btn = (document.querySelector(".btn").onclick = () => {
-  if (strin == " ") {
-    for (let i = 0; i <= 17; i++) {
-      if (i % 2 == 0) {
-        strin += i + "_**";
-      } else {
-        strin += i + "_*";
-      }
+  let input = document.querySelector(".input").value;
+  if (strin == "") {
+    for (let i = input; i >= 0; i--) {
+      strin += i + " ";
     }
   } else {
-    strin = " ";
-    for (let i = 0; i <= 17; i++) {
-      if (i % 2 == 0) {
-        strin += i + "_**";
-      } else {
-        strin += i + "_*";
-      }
+    strin = "";
+    for (let i = input; i >= 0; i--) {
+      strin += i + " ";
     }
   }
-  let out = (document.querySelector(".out").innerHTML = strin);
+  out.innerHTML = strin;
 });
