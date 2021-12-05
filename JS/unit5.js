@@ -119,19 +119,49 @@
 
 //t7
 
+// let strin = "";
+// let out = document.querySelector(".out");
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   let input = document.querySelector(".input").value;
+//   if (strin == "") {
+//     for (let i = input; i >= 0; i--) {
+//       strin += i + " ";
+//     }
+//   } else {
+//     strin = "";
+//     for (let i = input; i >= 0; i--) {
+//       strin += i + " ";
+//     }
+//   }
+//   out.innerHTML = strin;
+// });
+
+//t8,9 + bonus
 let strin = "";
-let out = document.querySelector(".out");
 let btn = (document.querySelector(".btn").onclick = () => {
   let input = document.querySelector(".input").value;
+  let input1 = document.querySelector(".input1").value;
   if (strin == "") {
-    for (let i = input; i >= 0; i--) {
-      strin += i + " ";
+    if (input1 > input) {
+      for (let i = input; i <= input1; i++) {
+        strin += i + " ";
+      }
+    } else {
+      for (let i = input; i >= input1; i--) {
+        strin += i + " ";
+      }
     }
   } else {
     strin = "";
-    for (let i = input; i >= 0; i--) {
-      strin += i + " ";
+    if (input1 > input) {
+      for (let i = input; i <= input1; i++) {
+        strin += i + " ";
+      }
+    } else {
+      for (let i = input; i >= input1; i--) {
+        strin += i + " ";
+      }
     }
   }
-  out.innerHTML = strin;
+  let out = (document.querySelector(".out").innerHTML = strin);
 });
