@@ -1,20 +1,28 @@
 let out = document.querySelector(".out");
 let strin = "";
 
-
-//t8
-
-let btn = document.querySelector('.btn').onclick = () => {
-    for (let i = 5; i > 0; i--){
-        for (let k = i; k > 0; k--){
-            strin += '*';
+//t9
+let btn = (document.querySelector(".btn").onclick = () => {
+    for (let i = 1; i <= 5; i++){
+        for (let k = 1; k <= i; k++){
+            strin += `${k} `;
         }
     strin += '<br>';
     }
 out.innerHTML = strin;
-};
+});
 
+//t8
 
+// let btn = document.querySelector('.btn').onclick = () => {
+//     for (let i = 5; i > 0; i--){
+//         for (let k = i; k > 0; k--){
+//             strin += '*';
+//         }
+//     strin += '<br>';
+//     }
+// out.innerHTML = strin;
+// };
 
 //t7
 
