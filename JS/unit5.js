@@ -191,3 +191,15 @@
   
 //   let out = document.querySelector('.out').innerHTML = strin;
 // };
+
+//t14
+
+let btn = document.querySelector('.btn').onclick = () => {
+  let input = document.querySelectorAll('input[type=radio]');
+  let out = document.querySelector('.out');
+  for (let i = 0; i < input.length; i++) {
+    if (input[i].checked) {
+      out.innerHTML = input[i].value;
+    }
+  }
+};
