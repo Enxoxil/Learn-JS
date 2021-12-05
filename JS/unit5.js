@@ -169,10 +169,22 @@
 
 //t10
 
+// let btn = document.querySelector('.btn').onclick = () => {
+//   let strin = '';
+//   for (let i = 1950; i <= 2000; i += 2) {
+//     strin += i + ' ';
+//   }
+//   let out = document.querySelector('.out').innerHTML = strin;
+// };
+
+//t11,12
+
 let btn = document.querySelector('.btn').onclick = () => {
+  let div = document.querySelectorAll('.div');
   let strin = '';
-  for (let i = 1950; i <= 2000; i += 2) {
-    strin += i + ' ';
+  for (let i = 0; i < div.length; i++){
+    strin += div[i].innerHTML + ' ';
+    div[i].style.background = 'orange';
   }
   let out = document.querySelector('.out').innerHTML = strin;
 };
