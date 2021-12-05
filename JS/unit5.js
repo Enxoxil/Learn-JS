@@ -166,7 +166,6 @@
 //   let out = (document.querySelector(".out").innerHTML = strin);
 // });
 
-
 //t10
 
 // let btn = document.querySelector('.btn').onclick = () => {
@@ -188,18 +187,41 @@
 //     strin += div[i].innerHTML + ' ';
 //     console.log(div[i].value);
 //   }
-  
+
 //   let out = document.querySelector('.out').innerHTML = strin;
 // };
 
 //t14
 
-let btn = document.querySelector('.btn').onclick = () => {
-  let input = document.querySelectorAll('input[type=radio]');
-  let out = document.querySelector('.out');
-  for (let i = 0; i < input.length; i++) {
-    if (input[i].checked) {
-      out.innerHTML = input[i].value;
+// let btn = document.querySelector('.btn').onclick = () => {
+//   let input = document.querySelectorAll('input[type=radio]');
+//   let out = document.querySelector('.out');
+//   for (let i = 0; i < input.length; i++) {
+//     if (input[i].checked){
+//      out.innerHTML = input[i].value;
+//     }
+//   }
+// };
+
+//t15
+
+let btn = (document.querySelector(".btn").onclick = () => {
+  let strin = "";
+  let out = document.querySelector(".out");
+  let a = document.querySelector(".input").value;
+  let b = document.querySelector(".input1").value;
+  if (a >= b) {
+    let x = b - 1;
+    for (let i = a; i >= b; i--) {
+      x++;
+      strin += i + " " + x + " ";
+    }
+  } else {
+    let x = a - 1;
+    for (let i = b; i >= a; i--) {
+      x++;
+      strin += i + " " + x + " ";
     }
   }
-};
+  out.innerHTML = strin;
+});
