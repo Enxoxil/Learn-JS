@@ -1,21 +1,33 @@
 let out = document.querySelector(".out");
 let strin = "";
 
-//t10
-let btn = (document.querySelector(".btn").onclick = () => {
-    strin = '';
-    for (let i = 0; i < 5; i++){
-        for (let k = 1; k <= 10; k++){
-            if ( k < 10) {
-                strin += `${i}${k} `;
-            } else {
-                strin += `${i+1}0`;
-            }
-        }
-    strin += '<br>';
+//hl1
+
+for(let i = 1; i <= 9; i++){
+    for(let k = 1; k <= 10; k++){
+        strin += `${i} * ${k} = ${i * k} <br>`;
     }
+strin += '<hr>';
+}
 out.innerHTML = strin;
-});
+
+
+
+//t10
+// let btn = (document.querySelector(".btn").onclick = () => {
+//     strin = '';
+//     for (let i = 0; i < 5; i++){
+//         for (let k = 1; k <= 10; k++){
+//             if ( k < 10) {
+//                 strin += `${i}${k} `;
+//             } else {
+//                 strin += `${i+1}0`;
+//             }
+//         }
+//     strin += '<br>';
+//     }
+// out.innerHTML = strin;
+// });
 
 //t9
 // let btn = (document.querySelector(".btn").onclick = () => {
