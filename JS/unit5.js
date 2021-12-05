@@ -177,14 +177,17 @@
 //   let out = document.querySelector('.out').innerHTML = strin;
 // };
 
-//t11,12
+//t11,12,13
 
-let btn = document.querySelector('.btn').onclick = () => {
-  let div = document.querySelectorAll('.div');
-  let strin = '';
-  for (let i = 0; i < div.length; i++){
-    strin += div[i].innerHTML + ' ';
-    div[i].style.background = 'orange';
-  }
-  let out = document.querySelector('.out').innerHTML = strin;
-};
+// let btn = document.querySelector('.btn').onclick = () => {
+//   let div = document.querySelectorAll('.div');
+//   let strin = '';
+//   for (let i = 0; i < div.length; i++){
+//     div[i].value = i + 1;
+//     div[i].style.background = 'orange';
+//     strin += div[i].innerHTML + ' ';
+//     console.log(div[i].value);
+//   }
+  
+//   let out = document.querySelector('.out').innerHTML = strin;
+// };
