@@ -1,22 +1,34 @@
 let out = document.querySelector(".out");
 let strin = "";
 
-//t6
+//t7
+
 let btn = (document.querySelector(".btn").onclick = () => {
-  for (let i = 1; i <= 3; i++) {
-    for (let k = 1; k <= 6; k++) {
-      if (k == 1 || k == 5) {
-        strin += 1;
-      } else if (k == 2 || k == 4) {
-        strin += 0;
-      } else {
-        strin += "x";
-      }
+  for (let i = 1; i <= 4; i++) {
+    for (let k = 1; k <= i; k++) {
+      strin += "*";
     }
     strin += "<br>";
   }
   out.innerHTML = strin;
 });
+
+//t6
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   for (let i = 1; i <= 3; i++) {
+//     for (let k = 1; k <= 6; k++) {
+//       if (k == 1 || k == 5) {
+//         strin += 1;
+//       } else if (k == 2 || k == 4) {
+//         strin += 0;
+//       } else {
+//         strin += "x";
+//       }
+//     }
+//     strin += "<br>";
+//   }
+//   out.innerHTML = strin;
+// });
 
 //t5
 
