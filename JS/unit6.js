@@ -1,17 +1,34 @@
 let out = document.querySelector(".out");
-let strin = "";
+let strin = "  ";
+
+//hl 5
+
+let btn = (document.querySelector(".btn").onclick = () => {
+  for (let i = 3; i > 0; i--) {
+    if (i == 3) {
+      strin += `  `;
+    } else if (i == 2) {
+      strin += `  `;
+    }
+    for (let k = 0; k < 5; k++) {
+      strin += "*";
+    }
+    strin += "<br>";
+  }
+
+  out.innerHTML = strin;
+  console.log(strin);
+});
 
 //hl1
 
-for(let i = 1; i <= 9; i++){
-    for(let k = 1; k <= 10; k++){
-        strin += `${i} * ${k} = ${i * k} <br>`;
-    }
-strin += '<hr>';
-}
-out.innerHTML = strin;
-
-
+// for(let i = 1; i <= 9; i++){
+//     for(let k = 1; k <= 10; k++){
+//         strin += `${i} * ${k} = ${i * k} <br>`;
+//     }
+// strin += '<hr>';
+// }
+// out.innerHTML = strin;
 
 //t10
 // let btn = (document.querySelector(".btn").onclick = () => {
