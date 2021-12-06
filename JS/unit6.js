@@ -1,24 +1,42 @@
 let out = document.querySelector(".out");
-let strin = "  ";
+let strin = "";
+
+//hl 6
+
+let btn = (document.querySelector(".btn").onclick = () => {
+  strin = "";
+  let input = document.querySelector('.input').value;
+  for (let i = 1, j = input; i <= input; i++) {
+    strin += i;
+    for (let k = i; k <= input && k > (input/2); k++) {
+      strin += "*";
+    }
+    for (let g = i; g <= (input/2) && g > 0; g--){
+      strin += "*";
+    }
+     strin += "<br>";
+  }
+  out.innerHTML = strin;
+});
 
 //hl 5
 
-let btn = (document.querySelector(".btn").onclick = () => {
-  for (let i = 3; i > 0; i--) {
-    if (i == 3) {
-      strin += `  `;
-    } else if (i == 2) {
-      strin += `  `;
-    }
-    for (let k = 0; k < 5; k++) {
-      strin += "*";
-    }
-    strin += "<br>";
-  }
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   for (let i = 3; i > 0; i--) {
+//     if (i == 3) {
+//       strin += `  `;
+//     } else if (i == 2) {
+//       strin += `  `;
+//     }
+//     for (let k = 0; k < 5; k++) {
+//       strin += "*";
+//     }
+//     strin += "<br>";
+//   }
 
-  out.innerHTML = strin;
-  console.log(strin);
-});
+//   out.innerHTML = strin;
+//   console.log(strin);
+// });
 
 //hl1
 
