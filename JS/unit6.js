@@ -4,9 +4,13 @@ let strin = "";
 //hl11
 let btn = (document.querySelector(".btn").onclick = () => {
   strin = "";
-  for (let i = 1; i <= 5; i++) {
-    for(let j = 1; j <= i; j++){
-      strin += `${i}   `;
+  for (let i = 5; i >= 1; i--) {
+    for (let j = i; j <= 5; j++) {
+      if (i % 2 == 0) {
+        strin += `X  `;
+      } else {
+        strin += `${i}   `;
+      }
     }
     strin += "<br>";
   }
