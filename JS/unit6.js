@@ -1,25 +1,41 @@
 let out = document.querySelector(".out");
 let strin = "";
 
-//hl7
 
-let btn = (document.querySelector(".btn").onclick = () => {
-  strin = "";
-  for (let i = 1; i <= 5; i++) {
-    for (let j = 1; j <= 6 && (i == 1 || i == 5); j++) {
-      strin += "*";
+
+
+//hl8
+let btn = document.querySelector('.btn').onclick = () => {
+  strin = '';
+  for (let i = 5; i >= 1; i--){
+    for (let j = i; j >= 1; j--){
+      strin += `${j} `;
     }
-    for (let g = 1; g <= 9 && i >= 2 && i <= 4; g++) {
-      if (g >= 2 && g <= 8) {
-        strin += "  ";
-      } else {
-        strin += "*";
-      }
-    }
-    strin += "<br> <br>";
+    strin += '<br>';
   }
   out.innerHTML = strin;
-});
+};
+
+
+//hl7
+
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   strin = "";
+//   for (let i = 1; i <= 5; i++) {
+//     for (let j = 1; j <= 6 && (i == 1 || i == 5); j++) {
+//       strin += "*";
+//     }
+//     for (let g = 1; g <= 9 && i >= 2 && i <= 4; g++) {
+//       if (g >= 2 && g <= 8) {
+//         strin += "  ";
+//       } else {
+//         strin += "*";
+//       }
+//     }
+//     strin += "<br> <br>";
+//   }
+//   out.innerHTML = strin;
+// });
 
 // hl 6
 // loop value is UP after value is down!!!!
