@@ -1,21 +1,41 @@
 let out = document.querySelector(".out");
 let strin = "";
 
+//hl9,10
+let btn = (document.querySelector(".btn").onclick = () => {
+  strin = "";
+  for (let i = 1; i <= 5; i++) {
+    if (i == 1){
+      strin += '_ _ _ _ ';
+    } else if (i == 2){
+      strin += '_ _ _ ';
+    } else if (i == 3){
+      strin += '_ _ ';
+    } else if (i == 4){
+      strin += '_ ';
+    } else {
+      strin += '';
+    }
+    for (let j = i; j > 0; j--) {
 
-
-
-//hl8
-let btn = document.querySelector('.btn').onclick = () => {
-  strin = '';
-  for (let i = 5; i >= 1; i--){
-    for (let j = i; j >= 1; j--){
       strin += `${j} `;
     }
-    strin += '<br>';
+    strin += "<br>";
   }
   out.innerHTML = strin;
-};
+});
 
+//hl8
+// let btn = document.querySelector('.btn').onclick = () => {
+//   strin = '';
+//   for (let i = 5; i >= 1; i--){
+//     for (let j = i; j >= 1; j--){
+//       strin += `${j} `;
+//     }
+//     strin += '<br>';
+//   }
+//   out.innerHTML = strin;
+// };
 
 //hl7
 
