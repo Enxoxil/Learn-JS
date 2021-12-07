@@ -1,21 +1,36 @@
 let out = document.querySelector(".out");
 let strin = "";
 
-//hl11
+//hl13
 let btn = (document.querySelector(".btn").onclick = () => {
   strin = "";
-  for (let i = 5; i >= 1; i--) {
-    for (let j = i; j <= 5; j++) {
-      if (i % 2 == 0) {
-        strin += `X  `;
-      } else {
-        strin += `${i}   `;
-      }
+  for (let i = 1; i <= 3; i++){
+    let s = 5;
+    for (let j = 1; j <= s; j++){
+      strin += `*`;
     }
-    strin += "<br>";
+    s = s + 2;
+    strin += '<br>';
+    console.log(s);
   }
   out.innerHTML = strin;
 });
+
+//hl11,12
+// let btn = (document.querySelector(".btn").onclick = () => {
+//   strin = "";
+//   for (let i = 5; i >= 1; i--) {
+//     for (let j = i; j <= 5; j++) {
+//       if (i % 2 == 0) {
+//         strin += `X  `;
+//       } else {
+//         strin += `${i}   `;
+//       }
+//     }
+//     strin += "<br>";
+//   }
+//   out.innerHTML = strin;
+// });
 
 //hl9,10
 // let btn = (document.querySelector(".btn").onclick = () => {
