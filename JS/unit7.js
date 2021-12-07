@@ -2,15 +2,24 @@ let btn = document.querySelector('.btn');
 let input = document.querySelector('.input');
 let out = document.querySelector('.out');
 
-//t4
-function t4 (a) {
-    return 2021 - a;
-}
+//t5
 
+function t5 (name) {
+    return 'Hello ' + name;
+}
 btn.onclick = () => {
-    let value = input.value;
-    out.innerHTML = t4 (value);
+    out.innerHTML = t5 (input.value);
 };
+
+//t4
+// function t4 (a) {
+//     return 2021 - a;
+// }
+
+// btn.onclick = () => {
+//     let value = input.value;
+//     out.innerHTML = t4 (value);
+// };
 
 
 
