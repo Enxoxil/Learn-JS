@@ -2,17 +2,28 @@ let btn = document.querySelector('.btn');
 let input = document.querySelector('.input');
 let out = document.querySelector('.out');
 
-
-//t3
-function t3 (a, b) {
-    return a * b;
+//t4
+function t4 (a) {
+    return 2021 - a;
 }
 
 btn.onclick = () => {
     let value = input.value;
-    out.innerHTML = t3 ( value, value);
-
+    out.innerHTML = t4 (value);
 };
+
+
+
+//t3
+// function t3 (a, b) {
+//     return a * b;
+// }
+
+// btn.onclick = () => {
+//     let value = input.value;
+//     out.innerHTML = t3 ( value, value);
+
+// };
 
 //2
 
