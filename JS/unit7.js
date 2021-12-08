@@ -1,15 +1,30 @@
 let btn = document.querySelector('.btn');
 let input = document.querySelector('.input');
+let input1 = document.querySelector('.input1');
 let out = document.querySelector('.out');
 
-//t5
+//t6
 
-function t5 (name) {
-    return 'Hello ' + name;
+function t6 (min, max) {
+    let c = min + Math.random() * (max + 1 - min);
+    console.log(c);
+    return Math.floor(c);
+    
 }
+
 btn.onclick = () => {
-    out.innerHTML = t5 (input.value);
+    out.innerHTML = t6 (+input.value, +input1.value);
 };
+
+
+
+//t5
+// function t5 (name) {
+//     return 'Hello ' + name;
+// }
+// btn.onclick = () => {
+//     out.innerHTML = t5 (input.value);
+// };
 
 //t4
 // function t4 (a) {
