@@ -3,21 +3,27 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let out = document.querySelector(".out");
 
+//t8
+
+btn.onclick = () => out.innerHTML = input.value.trim();
+
+
+
 
 //t7
 
-function color () {
-    let x = (Math.floor(Math.random() * (256)));
-    let y = (Math.floor(Math.random() * (256))) ;
-    let z = (Math.floor(Math.random() * (256)));
-    return `rgb(${x}, ${y}, ${z})`;
-}
+// function color () {
+//     let x = (Math.floor(Math.random() * (256)));
+//     let y = (Math.floor(Math.random() * (256))) ;
+//     let z = (Math.floor(Math.random() * (256)));
+//     return `rgb(${x}, ${y}, ${z})`;
+// }
 
-btn.onclick = () => {
+// btn.onclick = () => {
 
-btn.style.backgroundColor = color ();
+// btn.style.backgroundColor = color ();
 
-}
+// }
 
 //t6
 
