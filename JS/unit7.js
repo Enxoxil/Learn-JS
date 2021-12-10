@@ -3,9 +3,20 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let out = document.querySelector(".out");
 
+
+
+//t9
+
+btn.onclick = () => {
+    let num = input.value;
+    (num % 2 == 0) ? out.innerHTML = 'True' : out.innerHTML = 'False';
+}
+
+
+
 //t8
 
-btn.onclick = () => out.innerHTML = input.value.trim();
+// btn.onclick = () => out.innerHTML = input.value.trim();
 
 
 
