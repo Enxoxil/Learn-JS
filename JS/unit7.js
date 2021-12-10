@@ -9,7 +9,8 @@ let out = document.querySelector(".out");
 
 btn.onclick = () => {
     let num = input.value;
-    (num % 2 == 0) ? out.innerHTML = 'True' : out.innerHTML = 'False';
+    let mun = input1.value;
+    (num >= mun) ? out.innerHTML = num : out.innerHTML = mun;
 }
 
 
