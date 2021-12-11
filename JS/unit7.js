@@ -5,7 +5,7 @@ let out = document.querySelector(".out");
 
 
 
-//t9
+//t10п
 
 btn.onclick = () => {
     let num = input.value;
