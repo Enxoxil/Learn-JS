@@ -2,28 +2,43 @@ let btn = document.querySelector(".btn");
 let out = document.querySelector(".out");
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
-let str = " ";
+let str = "";
+
+//t6
+btn.onclick = () => {
+    let i = 0;
+    while (i < input.value){
+        let k = 0;
+        while (k < input.value){
+            str += '*';
+            k++;
+        }
+        str += '<br>';
+        i++;
+    }
+    out.innerHTML = str;
+};
 
 //t5
 
-btn.onclick = () => {
-  str = " ";
-  let min = +input.value;
-  let max = +input1.value;
-  if (min != "" && min != " " && max != '' && max != ' ') {
-    while (min <= max) {
-      if (min % 2 == 0) {
-        str += min + "_**";
-      } else {
-        str += min + "_*";
-      }
-      min++;
-    }
-  } else {
-      str += 'NaN';
-  }
-  out.innerHTML = str;
-};
+// btn.onclick = () => {
+//   str = " ";
+//   let min = +input.value;
+//   let max = +input1.value;
+//   if (min != "" && min != " " && max != '' && max != ' ') {
+//     while (min <= max) {
+//       if (min % 2 == 0) {
+//         str += min + "_**";
+//       } else {
+//         str += min + "_*";
+//       }
+//       min++;
+//     }
+//   } else {
+//       str += 'NaN';
+//   }
+//   out.innerHTML = str;
+// };
 //t4
 
 // btn.onclick = () => {
