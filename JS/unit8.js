@@ -4,18 +4,36 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
-//t7
+//t8
 
 btn.onclick = () => {
-    let i = input.value;
-    while (i >= 0){
-        str += i + ' ';
-        i--;
+  str = "";
+  let first = input.value;
+  let second = input1.value;
+  if (first <= second) {
+    while (first <= second) {
+      str += first + " ";
+      first++;
     }
-    out.innerHTML = str;
-}
+  } else {
+    while (second <= first) {
+      str += second + " ";
+      second++;
+    }
+  }
+  out.innerHTML = str;
+};
 
+//t7
 
+// btn.onclick = () => {
+//     let i = input.value;
+//     while (i >= 0){
+//         str += i + ' ';
+//         i--;
+//     }
+//     out.innerHTML = str;
+// }
 
 //t6
 // btn.onclick = () => {
