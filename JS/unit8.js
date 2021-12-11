@@ -4,17 +4,29 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
+//t4
+
+btn.onclick = () => {
+    let i = 77;
+    while (i >= 35){
+        str += i + '_';
+        i = i - 3;
+    }
+    out.innerHTML = str;
+}
+
+
 //t3
 
-btn.onclick = func();
-function func() {
-  let i = 25;
-  while (i >= 7) {
-      str += i + ' ';
-      i--;
-  }
-  out.innerHTML = str;
-}
+// btn.onclick = func();
+// function func() {
+//   let i = 25;
+//   while (i >= 7) {
+//       str += i + ' ';
+//       i--;
+//   }
+//   out.innerHTML = str;
+// }
 
 //t2
 
