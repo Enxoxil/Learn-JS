@@ -4,23 +4,43 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
-//t9
+//t10
 
 btn.onclick = () => {
   str = "";
-  let div = document.querySelectorAll(".vid");
-  let i = 0;
-  while (i < div.length) {
-    
-    console.log(div[i].innerHTML);
-    div[i].style.backgroundColor = 'red';
-    div[i].value = i + 1;
-
-    str += `${div[i].innerHTML} and (${div[i].value}), `;
-    i++;
+  let first = input.value;
+  let sec = input1.value;
+  if (first > sec) {
+    while (first >= sec) {
+      str += first + " ";
+      first--;
+    }
+  } else {
+    while (sec >= first) {
+      str += sec + " ";
+      sec--;
+    }
   }
   out.innerHTML = str;
 };
+
+//t9
+
+// btn.onclick = () => {
+//   str = "";
+//   let div = document.querySelectorAll(".vid");
+//   let i = 0;
+//   while (i < div.length) {
+
+//     console.log(div[i].innerHTML);
+//     div[i].style.backgroundColor = 'red';
+//     div[i].value = i + 1;
+
+//     str += `${div[i].innerHTML} and (${div[i].value}), `;
+//     i++;
+//   }
+//   out.innerHTML = str;
+// };
 
 //t8
 
