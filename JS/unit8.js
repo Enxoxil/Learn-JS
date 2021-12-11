@@ -2,19 +2,38 @@ let btn = document.querySelector(".btn");
 let out = document.querySelector(".out");
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
-let str = "";
+let str = " ";
 
-//t4
+//t5
 
 btn.onclick = () => {
-    let i = 77;
-    while (i >= 35){
-        str += i + '_';
-        i = i - 3;
+  str = " ";
+  let min = +input.value;
+  let max = +input1.value;
+  if (min != "" && min != " " && max != '' && max != ' ') {
+    while (min <= max) {
+      if (min % 2 == 0) {
+        str += min + "_**";
+      } else {
+        str += min + "_*";
+      }
+      min++;
     }
-    out.innerHTML = str;
-}
+  } else {
+      str += 'NaN';
+  }
+  out.innerHTML = str;
+};
+//t4
 
+// btn.onclick = () => {
+//     let i = 77;
+//     while (i >= 35){
+//         str += i + '_';
+//         i = i - 3;
+//     }
+//     out.innerHTML = str;
+// }
 
 //t3
 
