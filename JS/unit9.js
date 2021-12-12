@@ -5,12 +5,21 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
+//t7
+btn.onclick = () => {
+  let outs = document.querySelectorAll(".out");
+  for (let i = 0; i <= outs.length; i++) {
+    outs[i].classList.add('addedClass');
+    outs[i].innerHTML = `It's ${i} element of massive`;
+  }
+};
+
 //t6
 
-btn.onclick = () => {
-    let p = document.querySelectorAll('p').length;
-    out.innerHTML = p;
-}
+// btn.onclick = () => {
+//     let p = document.querySelectorAll('p').length;
+//     out.innerHTML = p;
+// }
 
 //t4,5
 // btn.onclick = function() {
