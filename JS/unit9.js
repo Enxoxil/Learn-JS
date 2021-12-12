@@ -5,18 +5,25 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
-//t13
-btn.onclick = () => {
-  let div = document.createElement("div");
-  div.innerHTML = "pushMe";
-  div.classList.add('newDiv');
+//18
+
+btn.onclick =() => {
+    let attr = out.getAttribute('data');
+    console.log(attr);
+}
+
+//t13, 14, 15, 16, 17
+// btn.onclick = () => {
+//   let div = document.createElement("div");
+//   div.innerHTML = "pushMe";
+//   div.classList.add('newDiv');
  
-  div.onclick = () => {
-    div.classList.toggle("addedClass");
-  };
-   out.prepend(div);
+//   div.onclick = () => {
+//     div.classList.toggle("addedClass");
+//   };
+//    out.prepend(div);
   
-};
+// };
 
 //t11,12
 
