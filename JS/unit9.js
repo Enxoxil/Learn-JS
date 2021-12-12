@@ -6,7 +6,7 @@ let input1 = document.querySelector(".input1");
 let str = "";
 
 
-//t4
+//t4,5
 btn.onclick = function() {
     this.classList.toggle('addedClass');
 }
