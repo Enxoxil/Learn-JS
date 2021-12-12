@@ -5,14 +5,26 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
-//t11,12
-
+//t13
 btn.onclick = () => {
   let div = document.createElement("div");
-  div.innerHTML = "25";
-  div.classList.add('addedClass');
-  out.appendChild(div);
+  div.innerHTML = "pushMe";
+  div.style.boxSizing = 'content-box';
+ 
+  div.onclick = () => {
+    div.classList.toggle("addedClass");
+  };
+   out.appendChild(div);
 };
+
+//t11,12
+
+// btn.onclick = () => {
+//   let div = document.createElement("div");
+//   div.innerHTML = "25";
+//   div.classList.add('addedClass');
+//   out.appendChild(div);
+// };
 //t9,10
 
 // let outs = document.querySelectorAll(".out");
