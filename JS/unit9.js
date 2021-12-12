@@ -5,11 +5,11 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
-//t7
+//t7,8
 btn.onclick = () => {
   let outs = document.querySelectorAll(".out");
   for (let i = 0; i <= outs.length; i++) {
-    outs[i].classList.add('addedClass');
+    outs[i].classList.toggle('addedClass');
     outs[i].innerHTML = `It's ${i} element of massive`;
   }
 };
