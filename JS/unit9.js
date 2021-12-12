@@ -9,12 +9,13 @@ let str = "";
 btn.onclick = () => {
   let div = document.createElement("div");
   div.innerHTML = "pushMe";
-  div.style.boxSizing = 'content-box';
+  div.classList.add('newDiv');
  
   div.onclick = () => {
     div.classList.toggle("addedClass");
   };
-   out.appendChild(div);
+   out.prepend(div);
+  
 };
 
 //t11,12
