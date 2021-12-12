@@ -5,21 +5,27 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
 
+//t6
+
+btn.onclick = () => {
+    let p = document.querySelectorAll('p').length;
+    out.innerHTML = p;
+}
 
 //t4,5
-btn.onclick = function() {
-    this.classList.toggle('addedClass');
-}
-btn1.onclick = () => {
-    console.log(toggl());
-    function toggl() {
-        if (btn.classList.contains('addedClass')){
-            return true;
-        } else {
-            return false;
-        }
-    }
-}
+// btn.onclick = function() {
+//     this.classList.toggle('addedClass');
+// }
+// btn1.onclick = () => {
+//     console.log(toggl());
+//     function toggl() {
+//         if (btn.classList.contains('addedClass')){
+//             return true;
+//         } else {
+//             return false;
+//         }
+//     }
+// }
 
 //t1,2,3
 
