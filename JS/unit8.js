@@ -8,17 +8,22 @@ let str = "";
 
 btn.onclick = () => {
   str = "";
-  let first = input.value;
-  let sec = input1.value;
-  if (first > sec) {
-    while (first >= sec) {
-      str += first + " ";
+  let first = +input.value;
+  let sec = +input1.value;
+
+  if (first > +input1.value) {
+    while (first >= input1.value) {
+      console.log(first, sec);
+      str += first + " " + sec + " ";
       first--;
+      sec++;
     }
   } else {
-    while (sec >= first) {
-      str += sec + " ";
+    while (sec >= +input.value) {
+      console.log(first, sec);
+      str += sec + " " + first + " ";
       sec--;
+      first++;
     }
   }
   out.innerHTML = str;
