@@ -11,6 +11,8 @@ btn.onclick = () => {
   out.style.width = "200px";
   out.style.height = "40px";
   out.style.border = "1px solid red";
-  out.style.backgroundColor = 'cyan';
-  out.style.textAlign = 'center';
+  out.style.backgroundColor = "cyan";
+  out.style.textAlign = "center";
+  out.classList.add("addedClass");
+  
 };
