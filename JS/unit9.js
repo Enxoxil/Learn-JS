@@ -12,7 +12,10 @@ btn.onclick = () => {
   str = '';
   let outs = document.querySelectorAll(".out");
   for (let i = 0; i < outs.length; i++) {
-
+    if (i == 2){
+      outs[2].setAttribute('title', 'go');
+      str += outs[i].getAttribute("title") + ' ';
+    }
     str += outs[i].getAttribute("data") + " ";
   }
   console.log(str);
