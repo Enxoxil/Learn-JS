@@ -1,28 +1,35 @@
 const btn = document.querySelector(".btn");
 const btn1 = document.querySelector(".btn1");
 let out = document.querySelector(".out");
+let out1 = document.querySelector(".out1");
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
-let str = "";
+let str = " ";
 
-//18
+//18,19,20
 
-btn.onclick =() => {
-    let attr = out.getAttribute('data');
-    console.log(attr);
-}
+btn.onclick = () => {
+  str = '';
+  let outs = document.querySelectorAll(".out");
+  for (let i = 0; i < outs.length; i++) {
+
+    str += outs[i].getAttribute("data") + " ";
+  }
+  console.log(str);
+  out1.innerHTML = str;
+};
 
 //t13, 14, 15, 16, 17
 // btn.onclick = () => {
 //   let div = document.createElement("div");
 //   div.innerHTML = "pushMe";
 //   div.classList.add('newDiv');
- 
+
 //   div.onclick = () => {
 //     div.classList.toggle("addedClass");
 //   };
 //    out.prepend(div);
-  
+
 // };
 
 //t11,12
