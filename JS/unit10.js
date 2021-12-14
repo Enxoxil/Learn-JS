@@ -6,11 +6,23 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = " ";
 
+
+//t7
+
+let arr = ['china', 'india', 'brazil', 'japan', 'egypt'];
+
+arr[5] = 'italy';
+arr[6] = 'turkey';
+arr[7] = 'vietnam';
+for (let i = 0; i < arr.length; i++){
+    str += arr[i] + ' ';
+}
+out.innerHTML = str;
 //t6
 
-let arr = ["Name", "zodiak", "month", "date"];
+// let arr = ["Name", "zodiak", "month", "date"];
 
-out.innerHTML = arr;
+// out.innerHTML = arr;
 //t5
 
 // let arr = [1, 2, 3, 4, 5, 6]
