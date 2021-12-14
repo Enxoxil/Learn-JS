@@ -6,11 +6,16 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = " ";
 
+//t10
+let arr = [100, 200, 300, 400, 700, 121];
+console.log(arr[0] + arr[arr.length-1]);
+
 
 //t9
-let arr = [100, 200, 300, 400, 700, 121];
-let a = arr[arr.length-1];
-console.log(a);
+// let arr = [100, 200, 300, 400, 700, 121];
+// let a = arr[arr.length-1];
+// console.log(a);
+
 //t8
 // let arr = [];
 // arr[3] = 3.14;
