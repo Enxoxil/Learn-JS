@@ -7,17 +7,24 @@ let input1 = document.querySelector(".input1");
 let str = " ";
 
 
-
-//t12
-let arr = ['test', 'west', 'list', 'class', 'best'];
-let a = arr[0];
-arr[0] = arr[arr.length-1];
-arr[arr.length-1] = a;
-console.log(arr);
-for (let i = 0; i < arr.length; i++){
-    str += i + " " + arr[i] + " ";
+//t14
+let arr = [1, 2, 3, 'hello', 66];
+for (let i = arr.length-1; i >= 0; i--){
+    console.log(arr[i]);
+    out.innerHTML += arr[i] + ' ';
 }
-out.innerHTML = str;
+
+
+//t12,13
+// let arr = ['test', 'west', 'list', 'class', 'best'];
+// let a = arr[0];
+// arr[0] = arr[arr.length-1];
+// arr[arr.length-1] = a;
+// console.log(arr);
+// for (let i = 0; i < arr.length; i++){
+//     str += i + " " + arr[i] + " ";
+// }
+// out.innerHTML = str;
 
 //t11
 // let arr = [2,3,4,5,6,7];
