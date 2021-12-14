@@ -6,18 +6,23 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = " ";
 
+
+//t9
+let arr = [100, 200, 300, 400, 700, 121];
+let a = arr[arr.length-1];
+console.log(a);
 //t8
-let arr = [];
-arr[3] = 3.14;
-arr[4] = 17;
-arr[6] = 5;
-console.log(arr);
-let sum = 0;
-for (let i = 0; i < arr.length; i++){
-   str += arr[i] + ' ';
-}
-console.log(str);
-console.log(arr.length);
+// let arr = [];
+// arr[3] = 3.14;
+// arr[4] = 17;
+// arr[6] = 5;
+// console.log(arr);
+// let sum = 0;
+// for (let i = 0; i < arr.length; i++){
+//    str += arr[i] + ' ';
+// }
+// console.log(str);
+// console.log(arr.length);
 
 //t7
 
