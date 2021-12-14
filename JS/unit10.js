@@ -15,7 +15,7 @@ arr[0] = arr[arr.length-1];
 arr[arr.length-1] = a;
 console.log(arr);
 for (let i = 0; i < arr.length; i++){
-    str += arr[i] += ' ';
+    str += i + " " + arr[i] + " ";
 }
 out.innerHTML = str;
 
