@@ -8,30 +8,51 @@ let str = " ";
 let str1 = " ";
 
 
-//t16
-let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
-let odd = [];
-let even = [];
-
+//t18
+let arr = [15,24,13,78,21,4,45,67];
+let maxx = arr[0];
 for (let i = 0; i < arr.length; i++){
-    if (arr[i] % 2 == 0){
-        odd.push(arr[i]);
-        
-    } else {
-        even.push(arr[i]);
-    }
+    if (arr[i] > maxx){
+        maxx = arr[i];
     
+    }
+
 }
-for (let i = 0; i < odd.length; i++){
-    str += odd[i] + '_';
-}
-for (let i = 0; i < even.length; i++){
-    str += even[i] + ' ';
-}
-out.innerHTML = str;
-out1.innerHTML = str1;
-console.log(odd);
-console.log(even);
+console.log(maxx);
+//t17
+// let arr = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
+// let a = 0;
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] > 3){
+//         a++;
+//     }
+// }
+// console.log(a);
+
+//t16
+// let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+// let odd = [];
+// let even = [];
+
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] % 2 == 0){
+//         odd.push(arr[i]);
+        
+//     } else {
+//         even.push(arr[i]);
+//     }
+    
+// }
+// for (let i = 0; i < odd.length; i++){
+//     str += odd[i] + '_';
+// }
+// for (let i = 0; i < even.length; i++){
+//     str += even[i] + ' ';
+// }
+// out.innerHTML = str;
+// out1.innerHTML = str1;
+// console.log(odd);
+// console.log(even);
 
 
 
