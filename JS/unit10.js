@@ -6,13 +6,21 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = " ";
 
+//t15
+let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+for (let i = 0; i < arr.length; i++){
+    if (arr[i] > 0){
+        str += arr[i] + " ";
+    }
+}
+out.innerHTML = str;
 
 //t14
-let arr = [1, 2, 3, 'hello', 66];
-for (let i = arr.length-1; i >= 0; i--){
-    console.log(arr[i]);
-    out.innerHTML += arr[i] + ' ';
-}
+// let arr = [1, 2, 3, 'hello', 66];
+// for (let i = arr.length-1; i >= 0; i--){
+//     console.log(arr[i]);
+//     out.innerHTML += arr[i] + ' ';
+// }
 
 
 //t12,13
