@@ -5,15 +5,45 @@ let out1 = document.querySelector(".out1");
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = " ";
+let str1 = " ";
 
-//t15
+
+//t16
 let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+let odd = [];
+let even = [];
+
 for (let i = 0; i < arr.length; i++){
-    if (arr[i] > 0){
-        str += arr[i] + " ";
+    if (arr[i] % 2 == 0){
+        odd.push(arr[i]);
+        
+    } else {
+        even.push(arr[i]);
     }
+    
+}
+for (let i = 0; i < odd.length; i++){
+    str += odd[i] + '_';
+}
+for (let i = 0; i < even.length; i++){
+    str += even[i] + ' ';
 }
 out.innerHTML = str;
+out1.innerHTML = str1;
+console.log(odd);
+console.log(even);
+
+
+
+
+//t15
+// let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+// for (let i = 0; i < arr.length; i++){
+//     if (arr[i] > 0){
+//         str += arr[i] + " ";
+//     }
+// }
+// out.innerHTML = str;
 
 //t14
 // let arr = [1, 2, 3, 'hello', 66];
