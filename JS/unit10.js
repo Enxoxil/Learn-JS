@@ -6,18 +6,30 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = " ";
 
+//t8
+let arr = [];
+arr[3] = 3.14;
+arr[4] = 17;
+arr[6] = 5;
+console.log(arr);
+let sum = 0;
+for (let i = 0; i < arr.length; i++){
+   str += arr[i] + ' ';
+}
+console.log(str);
+console.log(arr.length);
 
 //t7
 
-let arr = ['china', 'india', 'brazil', 'japan', 'egypt'];
+// let arr = ['china', 'india', 'brazil', 'japan', 'egypt'];
 
-arr[5] = 'italy';
-arr[6] = 'turkey';
-arr[7] = 'vietnam';
-for (let i = 0; i < arr.length; i++){
-    str += arr[i] + ' ';
-}
-out.innerHTML = str;
+// arr[5] = 'italy';
+// arr[6] = 'turkey';
+// arr[7] = 'vietnam';
+// for (let i = 0; i < arr.length; i++){
+//     str += arr[i] + ' ';
+// }
+// out.innerHTML = str;
 //t6
 
 // let arr = ["Name", "zodiak", "month", "date"];
