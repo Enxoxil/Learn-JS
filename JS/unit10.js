@@ -6,9 +6,29 @@ let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = " ";
 
+
+
+//t12
+let arr = ['test', 'west', 'list', 'class', 'best'];
+let a = arr[0];
+arr[0] = arr[arr.length-1];
+arr[arr.length-1] = a;
+console.log(arr);
+for (let i = 0; i < arr.length; i++){
+    str += arr[i] += ' ';
+}
+out.innerHTML = str;
+
+//t11
+// let arr = [2,3,4,5,6,7];
+// let num = arr[0];
+// arr[0] = arr[arr.length-1];
+// arr[arr.length-1] = num;
+// console.log(arr);
+
 //t10
-let arr = [100, 200, 300, 400, 700, 121];
-console.log(arr[0] + arr[arr.length-1]);
+// let arr = [100, 200, 300, 400, 700, 121];
+// console.log(arr[0] + arr[arr.length-1]);
 
 
 //t9
