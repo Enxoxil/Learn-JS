@@ -11,14 +11,17 @@ let str1 = " ";
 //t18
 let arr = [15,24,13,78,21,4,45,67];
 let maxx = arr[0];
+let min = arr[0];
 for (let i = 0; i < arr.length; i++){
     if (arr[i] > maxx){
         maxx = arr[i];
-    
-    }
+    };
+    if (arr[i] < min){
+        min = arr[i];
+    };
 
 }
-console.log(maxx);
+console.log(maxx, min);
 //t17
 // let arr = [3, 0, 2, 6, 0, 1, 3, 1, 9, 0, 2, 0];
 // let a = 0;
