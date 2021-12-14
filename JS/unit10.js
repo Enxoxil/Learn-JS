@@ -7,5 +7,7 @@ let input1 = document.querySelector(".input1");
 let str = " ";
 
 //t1
-let arr = [1, 2, 'ex', true];
-console.log(arr);
+let arr = [1, 2, 'ex', true, 5, 6, 7, 8];
+
+str += arr[0] + ' ' + arr[3] + ' ' + arr[arr.length - 1] + ' ';
+out.innerHTML = str;
