@@ -8,21 +8,37 @@ let str = " ";
 let str1 = " ";
 
 
+//t8
 
-//t7
-let arr = ['china', 'india', 'brazil', 'japan', 'egypt'];
+let arr = [2,'4', 12, 67, 'hello'];
 
 btn.onclick = () => {
-    arr.pop();
-    str = ' ';
-    outer ();
-}
-function outer (){
+    str = '';
+    arr[0] = input.value;
+
     for (let i = 0; i < arr.length; i++){
-        str += arr[i] + ' ';
+        str += arr[i] + " ";
     }
     out.innerHTML = str;
+    console.log(arr);
+    input.value = '';
 }
+
+
+//t7
+// let arr = ['china', 'india', 'brazil', 'japan', 'egypt'];
+
+// btn.onclick = () => {
+//     arr.pop();
+//     str = ' ';
+//     outer ();
+// }
+// function outer (){
+//     for (let i = 0; i < arr.length; i++){
+//         str += arr[i] + ' ';
+//     }
+//     out.innerHTML = str;
+// }
 
 //t6
 // let arr = [];
