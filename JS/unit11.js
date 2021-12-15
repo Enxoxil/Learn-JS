@@ -7,19 +7,36 @@ let input1 = document.querySelector(".input1");
 let str = " ";
 let str1 = " ";
 
-//t6
-let arr = [];
-btn.onclick = () => {
-  str = "";
-  outer();
-  out.innerHTML = str;
-  console.log(arr);
-};
 
-function outer() {
-  arr[arr.length] = input.value;
-  str += arr;
+
+//t7
+let arr = ['china', 'india', 'brazil', 'japan', 'egypt'];
+
+btn.onclick = () => {
+    arr.pop();
+    str = ' ';
+    outer ();
 }
+function outer (){
+    for (let i = 0; i < arr.length; i++){
+        str += arr[i] + ' ';
+    }
+    out.innerHTML = str;
+}
+
+//t6
+// let arr = [];
+// btn.onclick = () => {
+//   str = "";
+//   outer();
+//   out.innerHTML = str;
+//   console.log(arr);
+// };
+
+// function outer() {
+//   arr[arr.length] = input.value;
+//   str += arr;
+// }
 
 //t3,t4
 
