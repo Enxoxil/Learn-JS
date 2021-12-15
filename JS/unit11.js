@@ -7,23 +7,52 @@ let input1 = document.querySelector(".input1");
 let str = " ";
 let str1 = " ";
 
+//t11
+
+let arr = [2, 3, 4, 5, 6, 7];
+
+btn.onclick = () => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == arr.indexOf(input.value)) {
+      console.log(arr[i]);
+    } else {
+      console.log(input.value + '!');
+    }
+  }
+};
+
+//t10
+
+// let arr = [3,14,15,92,6];
+
+// btn.onclick = () => {
+//     arr.reverse();
+//     console.log(arr);
+// }
+//t9
+
+// let arr = [100, 200, 300, 400, 700, 121];
+
+// btn.onclick = () => {
+// console.log(arr);
+// delete arr[0];
+// }
 
 //t8
 
-let arr = [2,'4', 12, 67, 'hello'];
+// let arr = [2,'4', 12, 67, 'hello'];
 
-btn.onclick = () => {
-    str = '';
-    arr[0] = input.value;
+// btn.onclick = () => {
+//     str = '';
+//     arr[0] = input.value;
 
-    for (let i = 0; i < arr.length; i++){
-        str += arr[i] + " ";
-    }
-    out.innerHTML = str;
-    console.log(arr);
-    input.value = '';
-}
-
+//     for (let i = 0; i < arr.length; i++){
+//         str += arr[i] + " ";
+//     }
+//     out.innerHTML = str;
+//     console.log(arr);
+//     input.value = '';
+// }
 
 //t7
 // let arr = ['china', 'india', 'brazil', 'japan', 'egypt'];
