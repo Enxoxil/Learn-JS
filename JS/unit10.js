@@ -17,6 +17,8 @@ for (let i = 0; i < arr.length; i++){
     sum = sum + arr[i];
 }
 console.log(sum);
+
+
 //t18,19
 // let arr = [15,24,13,78,21,4,45,67];
 // let maxx = arr[0];
