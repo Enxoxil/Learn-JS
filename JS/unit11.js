@@ -7,23 +7,37 @@ let input1 = document.querySelector(".input1");
 let str = " ";
 let str1 = " ";
 
-
-//t3
-
-let arr = [33, "best", 66, "best"];
+//t6
+let arr = [];
 btn.onclick = () => {
-  arr.shift();
-  console.log(arr);
+  str = "";
   outer();
-  input.value = "";
-};
-function outer() {
-  str = " ";
-  for (let i = 0; i < arr.length; i++) {
-    str += arr[i] + " ";
-  }
   out.innerHTML = str;
+  console.log(arr);
+};
+
+function outer() {
+  arr[arr.length] = input.value;
+  str += arr;
 }
+
+//t3,t4
+
+// let arr = [33, "best", 66, "best"];
+// btn.onclick = () => {
+
+//   arr.unshift(input.value);
+//   console.log(arr);
+//   outer();
+//   input.value = "";
+// };
+// function outer() {
+//   str = " ";
+//   for (let i = 0; i < arr.length; i++) {
+//     str += arr[i] + " ";
+//   }
+//   out.innerHTML = str;
+// }
 
 //t2
 
