@@ -7,20 +7,28 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
+//t16
+let d16 = [];
+let d161 = [5,6,7,8,9];
+let d162 = [23,24,56,87];
+
+d16 = d161.concat(d162);
+console.log(d16);
+
 
 //t15 
-let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
+// let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
-btn.onclick = () => {
-  let a = arr.indexOf(+input.value);
-  console.log(a);
-  if (a == -1){
-    arr.push(+input.value);
-  } else {
-    console.log(a);
-  }
-  console.log(arr);
-}
+// btn.onclick = () => {
+//   let a = arr.indexOf(+input.value);
+//   console.log(a);
+//   if (a == -1){
+//     arr.push(+input.value);
+//   } else {
+//     console.log(a);
+//   }
+//   console.log(arr);
+// }
 
 
 //t14
