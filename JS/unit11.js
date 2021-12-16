@@ -4,7 +4,7 @@ let out = document.querySelector(".out");
 let out1 = document.querySelector(".out1");
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
-let str = " ";
+let str = "";
 let str1 = " ";
 
 //t11
@@ -12,12 +12,12 @@ let str1 = " ";
 let arr = [2, 3, 4, 5, 6, 7];
 
 btn.onclick = () => {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == arr.indexOf(input.value)) {
-      console.log(arr[i]);
-    } else {
-      console.log(input.value + '!');
-    }
+  str = "";
+  let a = arr.indexOf(+input.value);
+  if (arr[a] != -1) {
+    console.log(a);
+  } else {
+    console.log(arr[i]);
   }
 };
 
