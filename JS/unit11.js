@@ -7,16 +7,32 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
-//t14
 
-let arr = [];
+//t15 
+let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 btn.onclick = () => {
-  for (let i = 0; i < +input.value; i++) {
-    arr.push(1);
+  let a = arr.indexOf(+input.value);
+  console.log(a);
+  if (a == -1){
+    arr.push(+input.value);
+  } else {
+    console.log(a);
   }
   console.log(arr);
-};
+}
+
+
+//t14
+
+// let arr = [];
+
+// btn.onclick = () => {
+//   for (let i = 0; i < +input.value; i++) {
+//     arr.push(1);
+//   }
+//   console.log(arr);
+// };
 
 //t13
 // let arr = [6, 0, 22, 1, 4, 76];
