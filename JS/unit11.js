@@ -7,16 +7,29 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
+//t17
+d17 = [];
+d171 = ["a", "b", "c", "d"];
+d172 = [1, 2, 3, 4, 5];
+
+
+for (let i = 0; i < d171.length; i++) {
+  d17.push(d171[i]);
+}
+for (let i = 0; i < d172.length; i++){
+  d17.push(d172[i]);
+}
+console.log(d17);
+
 //t16
-let d16 = [];
-let d161 = [5,6,7,8,9];
-let d162 = [23,24,56,87];
+// let d16 = [];
+// let d161 = [5,6,7,8,9];
+// let d162 = [23,24,56,87];
 
-d16 = d161.concat(d162);
-console.log(d16);
+// d16 = d161.concat(d162);
+// console.log(d16);
 
-
-//t15 
+//t15
 // let arr = [0, 2, 5, -4, 6, 22, -9, -12, 8, 12, 13, 78];
 
 // btn.onclick = () => {
@@ -29,7 +42,6 @@ console.log(d16);
 //   }
 //   console.log(arr);
 // }
-
 
 //t14
 
