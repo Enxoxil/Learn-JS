@@ -7,20 +7,25 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
+//t20
+
+let arr = [4, 5, 6, 7, 8, 9, 10];
+
+console.log(arr.join('"'));
 
 //t19
 
-let arr = ['Your','payment','method','will','automatically','be','charged','in','advance','every' ];
+// let arr = ['Your','payment','method','will','automatically','be','charged','in','advance','every' ];
 
-let strLen = 0;
-let maxLen = 0;
-for (let i = 0; i < arr.length; i++){
-  if (strLen < arr[i].length){
-    strLen = arr[i].length;
-    maxLen = arr[i];
-  }
-}
-console.log(maxLen);
+// let strLen = 0;
+// let maxLen = 0;
+// for (let i = 0; i < arr.length; i++){
+//   if (strLen < arr[i].length){
+//     strLen = arr[i].length;
+//     maxLen = arr[i];
+//   }
+// }
+// console.log(maxLen);
 
 //t18
 
@@ -28,14 +33,13 @@ console.log(maxLen);
 
 // btn.onclick = () => {
 //   console.log (d18.includes(input.value));
-  
+
 // }
 
 //t17
 // d17 = [];
 // d171 = ["a", "b", "c", "d"];
 // d172 = [1, 2, 3, 4, 5];
-
 
 // for (let i = 0; i < d171.length; i++) {
 //   d17.push(d171[i]);
