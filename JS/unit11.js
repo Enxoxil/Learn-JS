@@ -7,20 +7,31 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
-//t13
-let arr = [6, 0, 22, 1, 4, 76];
-let arr2 = [];
+//t14
+
+let arr = [];
 
 btn.onclick = () => {
-  for (let i = arr.length - 1; i >= 0; i--) {
-    rev(i);
-    console.log(arr2);
+  for (let i = 0; i < +input.value; i++) {
+    arr.push(1);
   }
+  console.log(arr);
 };
-function rev(i) {
-  let a = arr[i];
-  arr2.push(a);
-}
+
+//t13
+// let arr = [6, 0, 22, 1, 4, 76];
+// let arr2 = [];
+
+// btn.onclick = () => {
+//   for (let i = arr.length - 1; i >= 0; i--) {
+//     rev(i);
+//     console.log(arr2);
+//   }
+// };
+// function rev(i) {
+//   let a = arr[i];
+//   arr2.push(a);
+// }
 
 //t11
 
