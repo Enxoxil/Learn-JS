@@ -7,19 +7,28 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
+//t18
+
+let d18 = ['b', 'c', '45', 'e', 'z', 'y'];
+
+btn.onclick = () => {
+  console.log (d18.includes(input.value));
+  
+}
+
 //t17
-d17 = [];
-d171 = ["a", "b", "c", "d"];
-d172 = [1, 2, 3, 4, 5];
+// d17 = [];
+// d171 = ["a", "b", "c", "d"];
+// d172 = [1, 2, 3, 4, 5];
 
 
-for (let i = 0; i < d171.length; i++) {
-  d17.push(d171[i]);
-}
-for (let i = 0; i < d172.length; i++){
-  d17.push(d172[i]);
-}
-console.log(d17);
+// for (let i = 0; i < d171.length; i++) {
+//   d17.push(d171[i]);
+// }
+// for (let i = 0; i < d172.length; i++){
+//   d17.push(d172[i]);
+// }
+// console.log(d17);
 
 //t16
 // let d16 = [];
