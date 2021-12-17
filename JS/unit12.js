@@ -7,16 +7,29 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
+//t5
+let arr = ["one", "two", "three", "four", "five", "six", "seven"];
 
-//t3
-
-let arr = ['yours', 'horse', 'my'];
 btn.onclick = () => {
-    out.innerHTML = f3();
+    console.clear();
+    str = '';
+    for (let i = 0; i < 4; i++){
+        let val = Math.floor(Math.random() * 7);
+        console.log(val);
+        str += arr[val] + ' ';
+    }
+    out.innerHTML = str;
 }
-function f3 () {
-    return arr[arr.indexOf('my')];
-}
+
+//t3,4
+
+// let arr = ['yours', 'horse', 'my'];
+// btn.onclick = () => {
+//     out.innerHTML = f3();
+// }
+// function f3 () {
+//     return arr[arr.indexOf('my')];
+// }
 
 //t2
 // let arr = ["nice", "hello", "hi"];
