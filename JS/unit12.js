@@ -7,9 +7,16 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = " ";
 
-//t1
-let arr = [11, 22, 33, 44, 55];
+//t2
+let arr = ["nice", "hello", "hi"];
+
 btn.onclick = () => {
-    out.innerHTML = arr[arr.indexOf(55)];
-    
-}
+  out.innerHTML = arr[arr.indexOf("hi")];
+};
+
+//t1
+// let arr = [11, 22, 33, 44, 55];
+// btn.onclick = () => {
+//     out.innerHTML = arr[arr.indexOf(55)];
+
+// }
