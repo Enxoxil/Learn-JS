@@ -10,31 +10,30 @@ let str1 = "";
 //t2
 
 let a2 = {
-    "one" : "hello",
-    "two" : "mahai",
-    "five" : "hi"
-    };
+  one: "hello",
+  two: "mahai",
+  five: "hi",
+};
 
 btn.onclick = () => {
-    str += func (input.value) + ' ';
-    input.value = '';
-    out.innerHTML = str;
-    str = '';
+  str += func(input.value) + " ";
+  input.value = "";
+  out.innerHTML = str;
+  str = "";
+};
 
-}
-
-function func (valu){
-    let prt = 0;
-    for (let key in a2){
-        if (a2[key] == valu){
-            console.log(a2[key]);
-            prt = a2[key];
-        } else {
-            console.log('Loose...!')
-            prt = 'Loose...!'
-        }
+function func(valu) {
+  let prt = 0;
+  for (let key in a2) {
+    if (a2[key] == valu) {
+      console.log(a2[key]);
+      prt = a2[key];
+    } else {
+      console.log("Loose...!");
+      prt = "Loose...!";
     }
-    return prt;
+  }
+  return prt;
 }
 
 // //t1
