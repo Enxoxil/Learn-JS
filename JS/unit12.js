@@ -4,22 +4,47 @@ let out = document.querySelector(".out");
 let out1 = document.querySelector(".out1");
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
-let str = "";
+let str = 0;
 let str1 = " ";
 
-//t5
-let arr = ["one", "two", "three", "four", "five", "six", "seven"];
+//t7
 
-btn.onclick = () => {
-    console.clear();
-    str = '';
-    for (let i = 0; i < 4; i++){
-        let val = Math.floor(Math.random() * 7);
-        console.log(val);
-        str += arr[val] + ' ';
+let arr = [[1, 2, 3], [4, 5], [6]];
+
+for (let i = 0; i < arr.length; i++){
+    for (let j = 0; j < arr[i].length; j++){
+        str = str + +arr[i][j];
     }
-    out.innerHTML = str;
 }
+console.log(str);
+
+//t6
+
+// let arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+// btn.onclick = () => {
+//     for (let i = 0; i < arr.length; i++){
+//         if (arr[i] % 2 != 0){
+//             str += arr[i] + ' ';
+//         } else {
+//             console.log('odd' + ' ' + arr[i]);
+//         }
+//     }
+//     out.innerHTML = str;
+// }
+
+//t5
+// let arr = ["one", "two", "three", "four", "five", "six", "seven"];
+
+// btn.onclick = () => {
+//     console.clear();
+//     str = '';
+//     for (let i = 0; i < 4; i++){
+//         let val = Math.floor(Math.random() * 7);
+//         console.log(val);
+//         str += arr[val] + ' ';
+//     }
+//     out.innerHTML = str;
+// }
 
 //t3,4
 
