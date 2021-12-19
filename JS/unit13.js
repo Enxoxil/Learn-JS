@@ -7,24 +7,48 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t7
+//t9
 
-let arr = {
-  a: "1",
-  b: "2",
-  c: "3",
+const arr = {
+  b: 17,
+  e: 22,
+  j: 17,
+  k: 22,
+  d: 54,
 };
 
 btn.onclick = () => {
   str = "";
-  if (Object.keys(arr).indexOf(input.value) != -1) {
-    str += `Есть такое, это ${arr[input.value]}`;
- 
-  } else {
-    str += "Нет такого";
+  let arrays = Object.values(arr);
+  let keys = Object.keys(arr);
+
+  for (let i = 0; i < arrays.length; i++) {
+    if (arrays[i] == input.value) {
+      str += `${keys[i]} `;
+    } else {
+      str += "";
+    }
   }
   out.innerHTML = str;
 };
+
+//t7,8
+
+// let arr = {
+//   a: "1",
+//   b: "2",
+//   c: "3",
+// };
+
+// btn.onclick = () => {
+//   str = "";
+//   if (Object.keys(arr).indexOf(input.value) != -1) {
+//     str += `Есть такое, это ${arr[input.value]}`;
+//   } else {
+//     str += "Нет такого";
+//   }
+//   out.innerHTML = str;
+// };
 
 //t6
 // const array = {};
