@@ -18,9 +18,10 @@ let arr = {
 btn.onclick = () => {
   str = "";
   if (Object.keys(arr).indexOf(input.value) != -1) {
-    str += "Есть такое";
+    str += `Есть такое, это ${arr[input.value]}`;
+ 
   } else {
-    str += "Loose...";
+    str += "Нет такого";
   }
   out.innerHTML = str;
 };
