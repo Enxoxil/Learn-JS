@@ -9,7 +9,21 @@ let str1 = "";
 
 //t7
 
+let arr = {
+  a: "1",
+  b: "2",
+  c: "3",
+};
 
+btn.onclick = () => {
+  str = "";
+  if (Object.keys(arr).indexOf(input.value) != -1) {
+    str += "Есть такое";
+  } else {
+    str += "Loose...";
+  }
+  out.innerHTML = str;
+};
 
 //t6
 // const array = {};
@@ -30,7 +44,6 @@ let str1 = "";
 //   func(array, out);
 //   console.log(array);
 // }
-
 
 // const a3 = {
 // 	"one": "hello",
@@ -70,7 +83,6 @@ let str1 = "";
 //   }
 //   out.innerHTML = str;
 // }
-
 
 //t2,3
 
