@@ -7,23 +7,69 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t4
-const a3 = {
-	"one": "hello",
-	"two": "mahai",
-	"five": "hi",
-	"test": 21,
-	"odd": "hi",
-	"mix": "mix"
-};
+//t7
 
-btn.onclick = () => {
-  str = '';
-  for (let i in a3) {
-    str += `${i} ${a3[i]} <br>`
-  }
-  out.innerHTML = str;
-}
+
+
+//t6
+// const array = {};
+// function func (arr, block) {
+//   str = '';
+//   for (let i in arr){
+//     str += `${i} ${arr[i]} <br>`;
+//   }
+//   block.innerHTML = str;
+// }
+// btn.onclick = () => {
+//   let key = input.value;
+//   let valu = input1.value;
+//   input.value = '';
+//   input1.value = '';
+//   array[key] = valu;
+
+//   func(array, out);
+//   console.log(array);
+// }
+
+
+// const a3 = {
+// 	"one": "hello",
+// 	"two": "mahai",
+// 	"five": "hi",
+// 	"test": 21,
+// 	"odd": "hi",
+// 	"mix": "mix"
+// };
+
+// function func (arr, block) {
+//   str = '';
+//   for (let i in arr){
+//     str += `${i} ${a3[i]} <br>`;
+//   }
+//   block.innerHTML = str;
+// }
+
+// btn.onclick = () => {
+//   func (a3, out)
+// }
+
+// //t4
+// const a3 = {
+// 	"one": "hello",
+// 	"two": "mahai",
+// 	"five": "hi",
+// 	"test": 21,
+// 	"odd": "hi",
+// 	"mix": "mix"
+// };
+
+// btn.onclick = () => {
+//   str = '';
+//   for (let i in a3) {
+//     str += `${i} ${a3[i]} <br>`
+//   }
+//   out.innerHTML = str;
+// }
 
 
 //t2,3
