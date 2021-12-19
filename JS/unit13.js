@@ -7,34 +7,22 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t10
+//t11
 
 const arr = {
-  b: 17,
-  e: 22,
-  j: 17,
-  k: 22,
-  d: 54,
+  'b': 17,
+  'e': 22,
+  'j': 17,
+  'k': 22,
+  'd': 54,
 };
 
 btn.onclick = () => {
-  str = "";
-  func(arr, input.value);
-};
-
-function func(arra, valu) {
-  let arrays = Object.values(arra);
-  let keys = Object.keys(arra);
-
-  for (let i = 0; i < arrays.length; i++) {
-    if (arrays[i] == valu) {
-      str += `${keys[i]} `;
-    } else {
-      str += "";
-    }
-  }
-  out.innerHTML = str;
-};
+  str += '';
+  delete arr[input.value];
+  console.log(arr);
+}
+//t10
 
 //t9
 
