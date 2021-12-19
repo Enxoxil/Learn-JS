@@ -7,34 +7,53 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t2
-
-let a2 = {
-  one: "hello",
-  two: "mahai",
-  five: "hi",
+//t4
+const a3 = {
+	"one": "hello",
+	"two": "mahai",
+	"five": "hi",
+	"test": 21,
+	"odd": "hi",
+	"mix": "mix"
 };
 
 btn.onclick = () => {
-  str += func(input.value) + " ";
-  input.value = "";
-  out.innerHTML = str;
-  str = "";
-};
-
-function func(valu) {
-  let prt = 0;
-  for (let key in a2) {
-    if (a2[key] == valu) {
-      console.log(a2[key]);
-      prt = a2[key];
-    } else {
-      console.log("Loose...!");
-      prt = "Loose...!";
-    }
+  str = '';
+  for (let i in a3) {
+    str += `${i} ${a3[i]} <br>`
   }
-  return prt;
+  out.innerHTML = str;
 }
+
+
+//t2,3
+
+// let a2 = {
+//   one: "hello",
+//   two: "mahai",
+//   five: "hi",
+// };
+
+// btn.onclick = () => {
+//   str += func(input.value) + " ";
+//   input.value = "";
+//   out.innerHTML = str;
+//   str = "";
+// };
+
+// function func(valu) {
+//   let prt = 0;
+//   for (let key in a2) {
+//     if (a2[key] == valu) {
+//       console.log(a2[key]);
+//       prt = a2[key];
+//     } else {
+//       console.log("Loose...!");
+//       prt = "Loose...!";
+//     }
+//   }
+//   return prt;
+// }
 
 // //t1
 
