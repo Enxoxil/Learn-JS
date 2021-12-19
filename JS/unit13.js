@@ -7,7 +7,7 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t9
+//t10
 
 const arr = {
   b: 17,
@@ -19,11 +19,15 @@ const arr = {
 
 btn.onclick = () => {
   str = "";
-  let arrays = Object.values(arr);
-  let keys = Object.keys(arr);
+  func(arr, input.value);
+};
+
+function func(arra, valu) {
+  let arrays = Object.values(arra);
+  let keys = Object.keys(arra);
 
   for (let i = 0; i < arrays.length; i++) {
-    if (arrays[i] == input.value) {
+    if (arrays[i] == valu) {
       str += `${keys[i]} `;
     } else {
       str += "";
@@ -31,6 +35,31 @@ btn.onclick = () => {
   }
   out.innerHTML = str;
 };
+
+//t9
+
+// const arr = {
+//   b: 17,
+//   e: 22,
+//   j: 17,
+//   k: 22,
+//   d: 54,
+// };
+
+// btn.onclick = () => {
+//   str = "";
+//   let arrays = Object.values(arr);
+//   let keys = Object.keys(arr);
+
+//   for (let i = 0; i < arrays.length; i++) {
+//     if (arrays[i] == input.value) {
+//       str += `${keys[i]} `;
+//     } else {
+//       str += "";
+//     }
+//   }
+//   out.innerHTML = str;
+// };
 
 //t7,8
 
