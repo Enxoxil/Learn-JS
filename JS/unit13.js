@@ -7,8 +7,7 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t16
-
+//t16,17
 const arr = {
   iis8sj: {
     names: "Ivan",
@@ -25,13 +24,12 @@ const arr = {
 };
 
 btn.onclick = () => {
+
   for (let i in arr) {
-    for (let k in arr[i]) {
-      if (k == "names") {
-        console.log(arr[i][k]);
+       if (arr[i]["age"] > 30){
+          console.log(arr[i]["names"]);
       }
     }
-  }
 };
 
 //t15
