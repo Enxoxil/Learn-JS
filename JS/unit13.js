@@ -10,22 +10,22 @@ let str1 = "";
 //t12
 
 const arr = {
-  'b': 17,
-  'e': 21,
-  'j': 19,
-  'k': 22,
-  'd': 54,
+  b: 17,
+  e: 21,
+  j: 19,
+  k: 22,
+  d: 54,
 };
 
 btn.onclick = () => {
-    let arrValues = Object.values(arr).indexOf(+input.value);
-    let arrKeys = Object.keys(arr);
-    delete arr[arrKeys[arrValues]];
-    func (arr, out);
-}
-function func (arr, block) {
-  str = '';
-  for (let i in arr){
+  let arrValues = Object.values(arr).indexOf(+input.value);
+  let arrKeys = Object.keys(arr);
+  delete arr[arrKeys[arrValues]];
+  func(arr, out);
+};
+function func(arr, block) {
+  str = "";
+  for (let i in arr) {
     str += `${i} ${arr[i]} <br>`;
   }
   block.innerHTML = str;
