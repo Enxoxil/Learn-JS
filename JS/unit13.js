@@ -7,30 +7,44 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t16,17
+//t18
 const arr = {
-  iis8sj: {
-    names: "Ivan",
-    age: 27,
-  },
-  iiss7j: {
-    names: "Petr",
-    age: 26,
-  },
-  s3s8sj: {
-    names: "Serg",
-    age: 47,
-  },
+	"red": ['Akademmistechko', 'Nyvky', 'Universytet', 'Lisova'],
+	"blue": ['Minska', 'Obolon', 'Pochaina', 'Holosiivska'],
+	"green": ['Syrets', 'Zoloti Vorota', 'Klovska', 'Vidubichi']
 };
 
 btn.onclick = () => {
-
-  for (let i in arr) {
-       if (arr[i]["age"] > 30){
-          console.log(arr[i]["names"]);
-      }
+    for (let key in arr){
+        if (key == input.value){
+            console.log(arr[key]);
+        }
     }
-};
+}
+//t16,17
+// const arr = {
+//   iis8sj: {
+//     names: "Ivan",
+//     age: 27,
+//   },
+//   iiss7j: {
+//     names: "Petr",
+//     age: 26,
+//   },
+//   s3s8sj: {
+//     names: "Serg",
+//     age: 47,
+//   },
+// };
+
+// btn.onclick = () => {
+
+//   for (let i in arr) {
+//        if (arr[i]["age"] > 30){
+//           console.log(arr[i]["names"]);
+//       }
+//     }
+// };
 
 //t15
 
