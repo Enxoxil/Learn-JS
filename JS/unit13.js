@@ -7,22 +7,74 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t11
+//t12
 
 const arr = {
   'b': 17,
-  'e': 22,
-  'j': 17,
+  'e': 21,
+  'j': 19,
   'k': 22,
   'd': 54,
 };
 
 btn.onclick = () => {
-  str += '';
-  delete arr[input.value];
-  console.log(arr);
+    let arrValues = Object.values(arr).indexOf(+input.value);
+    let arrKeys = Object.keys(arr);
+    delete arr[arrKeys[arrValues]];
+    func (arr, out);
 }
+function func (arr, block) {
+  str = '';
+  for (let i in arr){
+    str += `${i} ${arr[i]} <br>`;
+  }
+  block.innerHTML = str;
+}
+
+//t11
+
+// const arr = {
+//   'b': 17,
+//   'e': 22,
+//   'j': 17,
+//   'k': 22,
+//   'd': 54,
+// };
+
+// btn.onclick = () => {
+//   str += '';
+//   delete arr[input.value];
+//   console.log(arr);
+// }
 //t10
+
+// const array = {
+//   b: 17,
+//   e: 22,
+//   j: 17,
+//   k: 22,
+//   d: 54,
+// };
+
+// btn.onclick = () => {
+//   let a = input.value;
+//   func(array, a);
+//   console.log(str);
+// };
+
+// function func(arr, values) {
+//   let p = 0;
+//   for (let i in arr) {
+//     if (arr[i] == values) {
+//       str = `True`;
+//     } else {
+//       p++;
+//       if (p == Object.values(arr).length) {
+//         str = `false`;
+//       }
+//     }
+//   }
+// }
 
 //t9
 
@@ -86,6 +138,8 @@ btn.onclick = () => {
 //   func(array, out);
 //   console.log(array);
 // }
+
+//t5
 
 // const a3 = {
 // 	"one": "hello",
