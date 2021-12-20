@@ -7,24 +7,38 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-
-//t13
+//t14
 
 const arr = {
-  b: 17,
-  e: 21,
-  j: 19,
-  k: 22,
-  d: 54,
+	'prim': [1, 2, 23],
+	'one': [3, 4, 5],
+	'testt': [6, 7, 8],
+	'ivan': [9, 10]
 };
 
 btn.onclick = () => {
-    let sum = 0;
     for (let i in arr){
-        sum += arr[i];
+        str += arr[i][0] + ' ';
     }
-    console.log(sum);
+    console.log(str);
 }
+//t13
+
+// const arr = {
+//   b: 17,
+//   e: 21,
+//   j: 19,
+//   k: 22,
+//   d: 54,
+// };
+
+// btn.onclick = () => {
+//     let sum = 0;
+//     for (let i in arr){
+//         sum += arr[i];
+//     }
+//     console.log(sum);
+// }
 
 //t12
 
