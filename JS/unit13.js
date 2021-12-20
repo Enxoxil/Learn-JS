@@ -7,7 +7,7 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t14
+//t15
 
 const arr = {
 	'prim': [1, 2, 23],
@@ -18,10 +18,28 @@ const arr = {
 
 btn.onclick = () => {
     for (let i in arr){
-        str += arr[i][0] + ' ';
+        for (let k = 0; k < arr[i].length; k++){
+            str += `${arr[i][k]} `;
+        }
     }
-    console.log(str);
+    out.innerHTML = str;
 }
+
+//t14
+
+// const arr = {
+// 	'prim': [1, 2, 23],
+// 	'one': [3, 4, 5],
+// 	'testt': [6, 7, 8],
+// 	'ivan': [9, 10]
+// };
+
+// btn.onclick = () => {
+//     for (let i in arr){
+//         str += arr[i][0] + ' ';
+//     }
+//     console.log(str);
+// }
 //t13
 
 // const arr = {
