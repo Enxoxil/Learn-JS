@@ -7,23 +7,50 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t15
+//t16
 
 const arr = {
-	'prim': [1, 2, 23],
-	'one': [3, 4, 5],
-	'testt': [6, 7, 8],
-	'ivan': [9, 10]
+  iis8sj: {
+    names: "Ivan",
+    age: 27,
+  },
+  iiss7j: {
+    names: "Petr",
+    age: 26,
+  },
+  s3s8sj: {
+    names: "Serg",
+    age: 47,
+  },
 };
 
 btn.onclick = () => {
-    for (let i in arr){
-        for (let k = 0; k < arr[i].length; k++){
-            str += `${arr[i][k]} `;
-        }
+  for (let i in arr) {
+    for (let k in arr[i]) {
+      if (k == "names") {
+        console.log(arr[i][k]);
+      }
     }
-    out.innerHTML = str;
-}
+  }
+};
+
+//t15
+
+// const arr = {
+// 	'prim': [1, 2, 23],
+// 	'one': [3, 4, 5],
+// 	'testt': [6, 7, 8],
+// 	'ivan': [9, 10]
+// };
+
+// btn.onclick = () => {
+//     for (let i in arr){
+//         for (let k = 0; k < arr[i].length; k++){
+//             str += `${arr[i][k]} `;
+//         }
+//     }
+//     out.innerHTML = str;
+// }
 
 //t14
 
