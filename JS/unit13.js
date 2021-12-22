@@ -9,18 +9,29 @@ let str1 = "";
 
 //t18
 const arr = {
-	"red": ['Akademmistechko', 'Nyvky', 'Universytet', 'Lisova'],
-	"blue": ['Minska', 'Obolon', 'Pochaina', 'Holosiivska'],
-	"green": ['Syrets', 'Zoloti Vorota', 'Klovska', 'Vidubichi']
+  red: ["Akademmistechko", "Nyvky", "Universytet", "Lisova"],
+  blue: ["Minska", "Obolon", "Pochaina", "Holosiivska"],
+  green: ["Syrets", "Zoloti Vorota" , "Klovska", "Vidubichi"],
 };
 
 btn.onclick = () => {
-    for (let key in arr){
-        if (key == input.value){
-            console.log(arr[key]);
-        }
+  let flag = true;
+  for (let key in arr) {
+    if (key.toLowerCase() == input.value.toLowerCase()) {
+      console.log(arr[key]);
+      flag = false;
     }
-}
+    for (let i = 0, p = 0; i < arr[key].length; i++, p++) {
+      if (arr[key][i].toLowerCase() == input.value.toLowerCase()) {
+        console.log(key, arr[key]);
+        flag = false;
+      }
+    }
+  }
+  if (flag){
+    console.log(false);
+  }
+};
 //t16,17
 // const arr = {
 //   iis8sj: {
