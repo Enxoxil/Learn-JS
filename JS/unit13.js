@@ -7,31 +7,74 @@ let input1 = document.querySelector(".input1");
 let str = "";
 let str1 = "";
 
-//t18
-const arr = {
-  red: ["Akademmistechko", "Nyvky", "Universytet", "Lisova"],
-  blue: ["Minska", "Obolon", "Pochaina", "Holosiivska"],
-  green: ["Syrets", "Zoloti Vorota" , "Klovska", "Vidubichi"],
+//t20
+
+const obj = {
+  red: [
+    ["Akademmistechko", 1],
+    ["Nyvky", 0],
+    ["Universytet", 3],
+    ["Lisova", 1],
+  ],
+  blue: [
+    ["Minska", 1],
+    ["Obolon", 0],
+    ["Pochaina", 2],
+    ["Holosiivska", 0],
+  ],
+  green: [
+    ["Syrets", 1],
+    ["Zoloti Vorota", 2],
+    ["Klovska", 0],
+    ["Vidubichi", 1],
+  ],
 };
 
 btn.onclick = () => {
   let flag = true;
-  for (let key in arr) {
-    if (key.toLowerCase() == input.value.toLowerCase()) {
-      console.log(arr[key]);
-      flag = false;
-    }
-    for (let i = 0, p = 0; i < arr[key].length; i++, p++) {
-      if (arr[key][i].toLowerCase() == input.value.toLowerCase()) {
-        console.log(key, arr[key]);
-        flag = false;
+  console.clear();
+  if (input.value.length !== 0) {
+    for (let key in obj) {
+      for (let i = 0; i < obj[key].length; i++) {
+        for (let k = 0; k < obj[key][i].length; k++) {
+          if (obj[key][i][k] == +input.value) {
+            flag = false;
+            console.log(obj[key][i][k - 1]);
+          }
+        }
       }
     }
   }
-  if (flag){
+  if (flag) {
     console.log(false);
   }
 };
+
+//t18,19
+// const arr = {
+//   red: ["Akademmistechko", "Nyvky", "Universytet", "Lisova"],
+//   blue: ["Minska", "Obolon", "Pochaina", "Holosiivska"],
+//   green: ["Syrets", "Zoloti Vorota" , "Klovska", "Vidubichi"],
+// };
+
+// btn.onclick = () => {
+//   let flag = true;
+//   for (let key in arr) {
+//     if (key.toLowerCase() == input.value.toLowerCase()) {
+//       console.log(arr[key]);
+//       flag = false;
+//     }
+//     for (let i = 0, p = 0; i < arr[key].length; i++, p++) {
+//       if (arr[key][i].toLowerCase() == input.value.toLowerCase()) {
+//         console.log(key, arr[key]);
+//         flag = false;
+//       }
+//     }
+//   }
+//   if (flag){
+//     console.log(false);
+//   }
+// };
 //t16,17
 // const arr = {
 //   iis8sj: {
