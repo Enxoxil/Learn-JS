@@ -14,13 +14,28 @@ let str1 = "";
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
 
+//t3
 
-
-//t1
-
-let sat = new Set();
+let set = new Set();
 btn.onclick = () => {
-  sat.add(input.value);
-  input.value = "";
-  console.log(sat);
-};
+    if (input.value.length != 0){
+        set.add(input.value);
+        input.value = '';
+        console.log(set);
+    };
+    if (input1.value.length != 0){
+        set.delete(input1.value);
+        console.log(set);
+        input1.value = '';
+    }
+}
+
+
+//t1,t2
+
+// let sat = new Set();
+// btn.onclick = () => {
+//   sat.add(input.value);
+//   input.value = "";
+//   console.log(sat);
+// };
