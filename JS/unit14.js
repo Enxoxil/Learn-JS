@@ -13,7 +13,7 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t4
+//t4,t5
 
 let set = new Set();
 btn.onclick = () => {
@@ -24,7 +24,7 @@ btn.onclick = () => {
   }
   if (input1.value.length != 0) {
     if (set.has(input1.value)) {
-      console.log(true);
+      console.log(set.size);
       console.log(set);
     }
   }
