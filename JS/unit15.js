@@ -13,20 +13,38 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t11
+//t12
 
-const arr = [
-  1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56,
-  4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
-];
-let set = new Set();
+const strin =
+  "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy" +
+  " firesides but also of orphaned and starving children";
 
-btn.onclick = () => {
+  btn.onclick = () => {
+
+  
+  let string = strin.split(' ').join('');
+  let arr = string.split(''); // массив посимвольно с пробелами
+	let set = new Set();
   for (let i = 0; i < arr.length; i++){
-    set.add(arr[i]);
+	  set.add(arr[i]);
+
   }
   console.log(set);
 }
+//t11
+
+// const arr = [
+//   1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56,
+//   4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
+// ];
+// let set = new Set();
+
+// btn.onclick = () => {
+//   for (let i = 0; i < arr.length; i++){
+//     set.add(arr[i]);
+//   }
+//   console.log(set);
+// }
 
 //t9,t10
 
@@ -53,19 +71,22 @@ btn.onclick = () => {
 //   1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56,
 //   4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
 // ]);
-
+// let z = 0;
 // btn.onclick = () => {
 //   const arr = [];
 //   let zero = 0;
 //   for (let sets of set){
+	  
+
 //     if (sets > 5){
 //       arr.push(sets);
+// 	  z++;
 //     }
-
+	
 //   }
-//   console.log(arr);
+// console.log(arr,z);
 
-// }
+//  }
 
 //t7
 
