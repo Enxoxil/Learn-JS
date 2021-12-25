@@ -13,24 +13,39 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t9
+//t11
 
-const set = new Set([
+const arr = [
   1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56,
   4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
-]);
-
-function func(collection) {
-  return Array.from(collection);
-}
+];
+let set = new Set();
 
 btn.onclick = () => {
-  console.log(func(set));
-  for (let i = 0; i < func(set).length; i++){
-    str += `${func(set)[i]} `;
+  for (let i = 0; i < arr.length; i++){
+    set.add(arr[i]);
   }
-  out.innerHTML = str;
+  console.log(set);
 }
+
+//t9,t10
+
+// const set = new Set([
+//   1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56,
+//   4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
+// ]);
+
+// function func(collection) {
+//   return Array.from(collection);
+// }
+
+// btn.onclick = () => {
+//   console.log(func(set));
+//   for (let i = 0; i < func(set).length; i++){
+//     str += `${func(set)[i]} `;
+//   }
+//   out.innerHTML = str;
+// }
 
 //t8
 
