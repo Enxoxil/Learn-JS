@@ -13,26 +13,44 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t8
+//t9
 
 const set = new Set([
   1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56,
   4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
 ]);
 
+function func(collection) {
+  return Array.from(collection);
+}
 
 btn.onclick = () => {
-  const arr = [];
-  let zero = 0;
-  for (let sets of set){
-    if (sets > 5){
-      arr.push(sets);
-    }
-    
+  console.log(func(set));
+  for (let i = 0; i < func(set).length; i++){
+    str += `${func(set)[i]} `;
   }
-  console.log(arr);
-
+  out.innerHTML = str;
 }
+
+//t8
+
+// const set = new Set([
+//   1, 2, 3, 4, 5, 3, 4, 7, 9, 5, 7, 8, 9, 23, 45, 5, 2, 4, 5, 3, 24, 5, 2, 4, 56,
+//   4, 3, 2, 335, 2, 23, 41, 3, 4, 1, 1, 4, 2, 2, 4, 5, 24, 5, 3, 22, 56,
+// ]);
+
+// btn.onclick = () => {
+//   const arr = [];
+//   let zero = 0;
+//   for (let sets of set){
+//     if (sets > 5){
+//       arr.push(sets);
+//     }
+
+//   }
+//   console.log(arr);
+
+// }
 
 //t7
 
