@@ -13,18 +13,40 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t12
-
+//t13
 const strin =
   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy" +
   " firesides but also of orphaned and starving children";
 
 btn.onclick = () => {
   let string = strin.split(" ").join("");
-  let arr = string.split(""); // массив посимвольно с пробелами
+  let arr = string.split("");
   let set = new Set(arr);
-  console.log(set);
+  let obj = {};
+  for (let i of set) {
+    let count = 0;
+    for (let j = 0; j < arr.length; j++) {
+      if (arr[j] == i) {
+        count++;
+      }
+    }
+    obj[i] = count;
+  }
+  console.log(obj);
 };
+
+//t12
+
+// const strin =
+//   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy" +
+//   " firesides but also of orphaned and starving children";
+
+// btn.onclick = () => {
+//   let string = strin.split(" ").join("");
+//   let arr = string.split(""); // массив посимвольно с пробелами
+//   let set = new Set(arr);
+//   console.log(set);
+// };
 //t11
 
 // const arr = [
