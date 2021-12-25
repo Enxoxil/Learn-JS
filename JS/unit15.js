@@ -19,18 +19,12 @@ const strin =
   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy" +
   " firesides but also of orphaned and starving children";
 
-  btn.onclick = () => {
-
-  
-  let string = strin.split(' ').join('');
-  let arr = string.split(''); // массив посимвольно с пробелами
-	let set = new Set();
-  for (let i = 0; i < arr.length; i++){
-	  set.add(arr[i]);
-
-  }
+btn.onclick = () => {
+  let string = strin.split(" ").join("");
+  let arr = string.split(""); // массив посимвольно с пробелами
+  let set = new Set(arr);
   console.log(set);
-}
+};
 //t11
 
 // const arr = [
@@ -76,13 +70,12 @@ const strin =
 //   const arr = [];
 //   let zero = 0;
 //   for (let sets of set){
-	  
 
 //     if (sets > 5){
 //       arr.push(sets);
 // 	  z++;
 //     }
-	
+
 //   }
 // console.log(arr,z);
 
