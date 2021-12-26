@@ -14,26 +14,26 @@ let str1 = "";
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
 //t13
-const strin =
-  "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy" +
-  " firesides but also of orphaned and starving children";
+// const strin =
+//   "The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy" +
+//   " firesides but also of orphaned and starving children";
 
-btn.onclick = () => {
-  let string = strin.split(" ").join("");
-  let arr = string.split("");
-  let set = new Set(arr);
-  let obj = {};
-  for (let i of set) {
-    let count = 0;
-    for (let j = 0; j < arr.length; j++) {
-      if (arr[j] == i) {
-        count++;
-      }
-    }
-    obj[i] = count;
-  }
-  console.log(obj);
-};
+// btn.onclick = () => {
+//   let string = strin.split(" ").join("");
+//   let arr = string.split("");
+//   let set = new Set(arr);
+//   let obj = {};
+//   for (let i of set) {
+//     let count = 0;
+//     for (let j = 0; j < arr.length; j++) {
+//       if (arr[j] == i) {
+//         count++;
+//       }
+//     }
+//     obj[i] = count;
+//   }
+//   console.log(obj);
+// };
 
 //t12
 
