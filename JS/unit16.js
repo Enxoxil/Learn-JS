@@ -13,21 +13,41 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t5
-const arr = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
+//t6
+const a6 = [
+  [1, 2],
+  [3, 4],
+  [5, 6],
+];
 
-function func (array){
-    let ar = [];
-    for (let item of array){
-        if (item > 7){
-            ar.push(item);
-        }
-    }
-    return ar;
-}
 btn.onclick = () => {
-    console.log(func(arr));
-}
+  let arr = [];
+  let count = 0;
+  for (let i = 0; i < a6.length; i++) {
+    for (let j = 0; j < a6[i].length; j++) {
+      arr[count] = a6[i][j];
+      count++;
+    }
+  }
+
+  console.log(arr);
+};
+
+//t5
+// const arr = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
+
+// function func (array){
+//     let ar = [];
+//     for (let item of array){
+//         if (item > 7){
+//             ar.push(item);
+//         }
+//     }
+//     return ar;
+// }
+// btn.onclick = () => {
+//     console.log(func(arr));
+// }
 
 //t3,t4
 
