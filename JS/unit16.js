@@ -13,14 +13,30 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t5
+const arr = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
+
+function func (array){
+    let ar = [];
+    for (let item of array){
+        if (item > 7){
+            ar.push(item);
+        }
+    }
+    return ar;
+}
+btn.onclick = () => {
+    console.log(func(arr));
+}
+
 //t3,t4
 
-btn.onclick = () => {
-  let arr = document.querySelectorAll(".out");
-  for (let i = 0; i < arr.length; i++) {
-    arr[i].innerHTML = 323;
-  }
-};
+// btn.onclick = () => {
+//   let arr = document.querySelectorAll(".out");
+//   for (let i = 0; i < arr.length; i++) {
+//     arr[i].innerHTML = 323;
+//   }
+// };
 
 //t1,t2
 // const arr = [5, 7, 9, 11, 13, 15];
