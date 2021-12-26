@@ -13,12 +13,14 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+
+
 //t1 
 const arr = [5, 7, 9, 11, 13, 15];
 
 btn.onclick = () => {
     for (let i = 0; i < arr.length; i++){
-        str += `${arr[i]} `;
+        str += `${i} - ${arr[i]}, `;
     }
     out.innerHTML = str;
 }
