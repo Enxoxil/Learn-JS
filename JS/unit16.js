@@ -13,12 +13,12 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t3
+//t3,t4
 
 btn.onclick = () => {
-  let arr = document.getElementsByClassName("out");
+  let arr = document.querySelectorAll(".out");
   for (let i = 0; i < arr.length; i++) {
-    arr[i].innerHTML = 33;
+    arr[i].innerHTML = 323;
   }
 };
 
