@@ -13,15 +13,21 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-
-
-//t1 
-const arr = [5, 7, 9, 11, 13, 15];
+//t3
 
 btn.onclick = () => {
-    for (let i = 0; i < arr.length; i++){
-        str += `${i} - ${arr[i]}, `;
-    }
-    out.innerHTML = str;
-}
+  let arr = document.getElementsByClassName("out");
+  for (let i = 0; i < arr.length; i++) {
+    arr[i].innerHTML = 33;
+  }
+};
 
+//t1,t2
+// const arr = [5, 7, 9, 11, 13, 15];
+
+// btn.onclick = () => {
+//     for (let i = 0; i < arr.length; i++){
+//         str += `${i} - ${arr[i]}, `;
+//     }
+//     out.innerHTML = str;
+// }
