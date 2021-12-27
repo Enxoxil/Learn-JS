@@ -13,25 +13,51 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t6
-const a6 = [
-  [1, 2],
-  [3, 4],
-  [5, 6],
+//t7
+
+const arr = [
+  { id: 23, name: "Ivan" },
+  { id: 45, name: "Petr" },
+  { id: 43, name: "Vasya" },
+  { id: 42, name: "Vetal" },
+  { id: 40, name: "Bosh" },
+  { id: 49, name: "Pors" },
+  { id: 35, name: "Else" },
+  { id: 67, name: "Lele" },
+  { id: 19, name: "Lulu" },
+  { id: 10, name: "Pepe" },
 ];
 
 btn.onclick = () => {
-  let arr = [];
-  let count = 0;
-  for (let i = 0; i < a6.length; i++) {
-    for (let j = 0; j < a6[i].length; j++) {
-      arr[count] = a6[i][j];
-      count++;
-    }
+  let va;
+  let obj = {};
+  let keys = [];
+  let values = [];
+  for (let i = 0; i < arr.length; i++) {
+    obj[arr[i].id] = arr[i].name;
   }
-
-  console.log(arr);
+  console.log(obj);
 };
+
+//t6
+// const a6 = [
+//   [1, 2],
+//   [3, 4],
+//   [5, 6],
+// ];
+
+// btn.onclick = () => {
+//   let arr = [];
+//   let count = 0;
+//   for (let i = 0; i < a6.length; i++) {
+//     for (let j = 0; j < a6[i].length; j++) {
+//       arr[count] = a6[i][j];
+//       count++;
+//     }
+//   }
+
+//   console.log(arr);
+// };
 
 //t5
 // const arr = [3, 4, 5, 2, 1, 7, 8, 2, 4, 6, 8, 11, 23, 17];
