@@ -13,15 +13,27 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t14
 
-const a14 = new Set([4, 5, 6]);
+//t15
+
+let items;
 
 btn.onclick = () => {
-  for (let item of a14){
-    console.log(item);
-  }
+    items = document.querySelectorAll('.out');
+    for (let item of items){
+        item.innerHTML = 15;
+    }
 }
+
+//t14
+
+// const a14 = new Set([4, 5, 6]);
+
+// btn.onclick = () => {
+//   for (let item of a14){
+//     console.log(item);
+//   }
+// }
 
 //t13
 
