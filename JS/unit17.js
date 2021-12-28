@@ -13,16 +13,30 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t5
-const arr = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
+
+//t6
+const arr = [3, 14, 15, 92, "6", "5", "hello", 32];
+
 btn.onclick = () => {
-  const arrRes = arr.filter(function (item) {
-    if (item % 2 == 0) {
-      return item;
-    }
-  });
-  console.log(arrRes);
-};
+    const arrRes = arr.filter (function (item){
+        if (typeof item == 'number'){
+            return item;
+        }
+    })
+    console.log(arrRes);
+}
+
+
+//t5
+// const arr = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
+// btn.onclick = () => {
+//   const arrRes = arr.filter(function (item) {
+//     if (item % 2 == 0 && typeof item == 'number') {
+//       return item;
+//     }
+//   });
+//   console.log(arrRes);
+// };
 
 //t4
 
