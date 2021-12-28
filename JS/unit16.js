@@ -13,33 +13,51 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t7,t8
+//t9
 
 const arr = [
-  { id: 23, name: "Ivan" },
-  { id: 45, name: "Petr" },
-  { id: 43, name: "Vasya" },
-  { id: 42, name: "Vetal" },
-  { id: 40, name: "Bosh" },
-  { id: 49, name: "Pors" },
-  { id: 35, name: "Else" },
-  { id: 67, name: "Lele" },
-  { id: 19, name: "Lulu" },
-  { id: 10, name: "Pepe" },
+  [4, 3, 2],
+  [2, 5],
+  [0, 0, 0, 0, 0],
 ];
 
 btn.onclick = () => {
-  let array = [];
-  let obj = {};
-  let keys = [];
-  let values = [];
+  let index = 0;
   for (let i = 0; i < arr.length; i++) {
-    obj[arr[i].id] = arr[i].name;
-    array = Object.keys(obj);
+    if (arr[i].length > index) {
+      index = arr[i].length - 1;
+    }
   }
-  console.log(obj);
-  console.log(array);
+  console.log(index);
 };
+
+//t7,t8
+
+// const arr = [
+//   { id: 23, name: "Ivan" },
+//   { id: 45, name: "Petr" },
+//   { id: 43, name: "Vasya" },
+//   { id: 42, name: "Vetal" },
+//   { id: 40, name: "Bosh" },
+//   { id: 49, name: "Pors" },
+//   { id: 35, name: "Else" },
+//   { id: 67, name: "Lele" },
+//   { id: 19, name: "Lulu" },
+//   { id: 10, name: "Pepe" },
+// ];
+
+// btn.onclick = () => {
+//   let array = [];
+//   let obj = {};
+//   let keys = [];
+//   let values = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     obj[arr[i].id] = arr[i].name;
+//     array = Object.keys(obj);
+//   }
+//   console.log(obj);
+//   console.log(array);
+// };
 
 //t6
 // const a6 = [
