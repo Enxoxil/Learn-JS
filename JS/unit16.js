@@ -13,24 +13,35 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t11
 
-const obj = {
-  one: 11,
-  two: 7,
-  three: 13,
-  four: 0,
-};
+//t12
+
+const arr = [4, 5, 6, 7];
 
 btn.onclick = () => {
-  str = '';
-  for (let key in obj){
-    if (obj[key] > 10){
-      str += `${obj[key]} `;
-    }
+  for (let item of arr){
+    console.log(item);
   }
-  out.innerHTML = str;
 }
+
+//t11
+
+// const obj = {
+//   one: 11,
+//   two: 7,
+//   three: 13,
+//   four: 0,
+// };
+
+// btn.onclick = () => {
+//   str = '';
+//   for (let key in obj){
+//     if (obj[key] > 10){
+//       str += `${obj[key]} `;
+//     }
+//   }
+//   out.innerHTML = str;
+// }
 
 //t10
 
