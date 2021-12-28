@@ -11,21 +11,36 @@ let str1 = "";
 // feat: add banner - реализован новый функционал
 // fix: change layout исправление
 // refactor: change structure - без нового функционала и изменения поведения.
-// изменил форматирование, улучшил алгоритм, переложил файлы 
+// изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t4
+
+const arr = [4, "3", 6, 7, "12", 34, "56", 78, 90, 11];
+
+btn.onclick = () => {
+  const arrMap = arr.map(function (item) {
+    return item;
+  });
+  const arrFilter = arr.filter(function (items) {
+    if (typeof items == "number") {
+      return items;
+    }
+  });
+  console.log(arrFilter);
+};
 
 //t3
 
-const arr = [4,"3",6,7,"12",34,"56",78,90,11];
+// const arr = [4,"3",6,7,"12",34,"56",78,90,11];
 
-btn.onclick = () => {
-    let arrRes = arr.map(item => +item)
-console.log(arrRes);
-}
+// btn.onclick = () => {
+//     let arrRes = arr.map(item => +item)
+// console.log(arrRes);
+// }
 
 //t2
 
-// const arr = [2,3,4,5,10,11,12]; 
+// const arr = [2,3,4,5,10,11,12];
 
 // btn.onclick = () => {
 //     let arrRes = arr.map(function(item){
