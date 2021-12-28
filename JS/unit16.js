@@ -13,7 +13,7 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t7
+//t7,t8
 
 const arr = [
   { id: 23, name: "Ivan" },
@@ -29,14 +29,16 @@ const arr = [
 ];
 
 btn.onclick = () => {
-  let va;
+  let array = [];
   let obj = {};
   let keys = [];
   let values = [];
   for (let i = 0; i < arr.length; i++) {
     obj[arr[i].id] = arr[i].name;
+    array = Object.keys(obj);
   }
   console.log(obj);
+  console.log(array);
 };
 
 //t6
