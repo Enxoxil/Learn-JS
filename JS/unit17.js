@@ -14,16 +14,25 @@ let str1 = "";
 // изменил форматирование, улучшил алгоритм, переложил файлы 
 
 
-//t2
+//t3
 
-const arr = [2,3,4,5,10,11,12]; 
+const arr = [4,"3",6,7,"12",34,"56",78,90,11];
 
 btn.onclick = () => {
-    let arrRes = arr.map(function(item){
-        return item ** 2;
-    })
-    console.log(arrRes);
+    let arrRes = arr.map(item => +item)
+console.log(arrRes);
 }
+
+//t2
+
+// const arr = [2,3,4,5,10,11,12]; 
+
+// btn.onclick = () => {
+//     let arrRes = arr.map(function(item){
+//         return item ** 2;
+//     })
+//     console.log(arrRes);
+// }
 //t1
 
 // const arr = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
