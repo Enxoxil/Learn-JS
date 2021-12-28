@@ -13,16 +13,28 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t13
+
+const a = 'testone';
+
+btn.onclick = () => {
+  str = '';
+  for (let index of a){
+    str += `${index} `;
+  }
+  out.innerHTML = str;
+}
+
 
 //t12
 
-const arr = [4, 5, 6, 7];
+// const arr = [4, 5, 6, 7];
 
-btn.onclick = () => {
-  for (let item of arr){
-    console.log(item);
-  }
-}
+// btn.onclick = () => {
+//   for (let item of arr){
+//     console.log(item);
+//   }
+// }
 
 //t11
 
