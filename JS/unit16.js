@@ -16,14 +16,14 @@ let str1 = "";
 
 //t15
 
-let items;
+// let items;
 
-btn.onclick = () => {
-    items = document.querySelectorAll('.out');
-    for (let item of items){
-        item.innerHTML = 15;
-    }
-}
+// btn.onclick = () => {
+//     items = document.querySelectorAll('.out');
+//     for (let item of items){
+//         item.innerHTML = 15;
+//     }
+// }
 
 //t14
 
