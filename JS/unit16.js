@@ -13,17 +13,35 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t11
+
+const obj = {
+  one: 11,
+  two: 7,
+  three: 13,
+  four: 0,
+};
+
+btn.onclick = () => {
+  str = '';
+  for (let key in obj){
+    if (obj[key] > 10){
+      str += `${obj[key]} `;
+    }
+  }
+  out.innerHTML = str;
+}
 
 //t10
 
-const arr = [4, 6, 9, 'Hello'];
-const obj = {};
-btn.onclick = () => {
-  for (let i = 0; i < arr.length; i++){
-    obj[arr[i]] = arr[i];
-  }
-  console.log(obj);
-}
+// const arr = [4, 6, 9, 'Hello'];
+// const obj = {};
+// btn.onclick = () => {
+//   for (let i = 0; i < arr.length; i++){
+//     obj[arr[i]] = arr[i];
+//   }
+//   console.log(obj);
+// }
 
 //t9
 
