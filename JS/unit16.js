@@ -13,17 +13,27 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t13
+//t14
 
-const a = 'testone';
+const a14 = new Set([4, 5, 6]);
 
 btn.onclick = () => {
-  str = '';
-  for (let index of a){
-    str += `${index} `;
+  for (let item of a14){
+    console.log(item);
   }
-  out.innerHTML = str;
 }
+
+//t13
+
+// const a = 'testone';
+
+// btn.onclick = () => {
+//   str = '';
+//   for (let index of a){
+//     str += `${index} `;
+//   }
+//   out.innerHTML = str;
+// }
 
 
 //t12
