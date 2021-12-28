@@ -13,21 +13,38 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t9
+
+const arr = [3, "hello", 4, "world", 5, "hi"];
+
+btn.onclick = () => {
+    const num = [];
+    const strin = [];
+
+    arr.filter( (item) => {
+        if (typeof item == 'number'){
+            num.push(item);
+        } if (typeof item == 'string'){
+            strin.push(item);
+        }
+    })
+    console.log(num, strin);
+}
 
 //t8
-const indexes = [];
-const arr =  [3, 14, 15, 92, "6", "5", "hello", 32];
-btn.onclick = () => {
-    const arrRes = arr.filter (func);
+// const indexes = [];
+// const arr =  [3, 14, 15, 92, "6", "5", "hello", 32];
+// btn.onclick = () => {
+//     const arrRes = arr.filter (func);
     
-    console.log(indexes);
-}
-function func (item, index){
-    if (item % 2 == 0){
-        indexes.push(index);
-        return true;
-    }
-}
+//     console.log(indexes);
+// }
+// function func (item, index){
+//     if (item % 2 == 0){
+//         indexes.push(index);
+//         return true;
+//     }
+// }
 
 //t7
 
