@@ -13,23 +13,35 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+
+//t10
+
+const arr = [4, 6, 9, 'Hello'];
+const obj = {};
+btn.onclick = () => {
+  for (let i = 0; i < arr.length; i++){
+    obj[arr[i]] = arr[i];
+  }
+  console.log(obj);
+}
+
 //t9
 
-const arr = [
-  [4, 3, 2],
-  [2, 5],
-  [0, 0, 0, 0, 0],
-];
+// const arr = [
+//   [4, 3, 2],
+//   [2, 5],
+//   [0, 0, 0, 0, 0],
+// ];
 
-btn.onclick = () => {
-  let index = 0;
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].length > index) {
-      index = arr[i].length - 1;
-    }
-  }
-  console.log(index);
-};
+// btn.onclick = () => {
+//   let index = 0;
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length > index) {
+//       index = arr[i].length - 1;
+//     }
+//   }
+//   console.log(index);
+// };
 
 //t7,t8
 
