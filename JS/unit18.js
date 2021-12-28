@@ -19,9 +19,10 @@ const arr = [4,5,6,7,12,34,56,78,90,11];
 
 btn.onclick = () => {
     const arrRes = [];
+    const arrRos = [];
     arr.forEach (function (item){
-        
+        arrRos.push(item / 2);
         arrRes.push(item * 2);
     })
-    console.log(arrRes);
+    console.log(arrRes, arrRos);
 }
