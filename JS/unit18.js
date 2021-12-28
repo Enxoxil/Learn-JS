@@ -13,3 +13,15 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t1
+
+const arr = [4,5,6,7,12,34,56,78,90,11];
+
+btn.onclick = () => {
+    const arrRes = [];
+    arr.forEach (function (item){
+        
+        arrRes.push(item * 2);
+    })
+    console.log(arrRes);
+}
