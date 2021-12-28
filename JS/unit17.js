@@ -13,14 +13,25 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы 
 
-//t1
 
-const arr = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
+//t2
+
+const arr = [2,3,4,5,10,11,12]; 
 
 btn.onclick = () => {
-
     let arrRes = arr.map(function(item){
-        return item * 2;
+        return item ** 2;
     })
     console.log(arrRes);
 }
+//t1
+
+// const arr = [4, 5, 6, 7, 12, 34, 56, 78, 90, 11];
+
+// btn.onclick = () => {
+
+//     let arrRes = arr.map(function(item){
+//         return item * 2;
+//     })
+//     console.log(arrRes);
+// }
