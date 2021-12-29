@@ -13,13 +13,22 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t7
+//t8
 
-let strin = "hello world hi mazai fskfs dsfsf";
+let arr = [1,2,66,77,15];
 
 btn.onclick = () => {
-  console.log(strin.split(" "));
-};
+  let str = arr.join('-');
+  console.log(str);
+}
+
+//t7
+
+// let strin = "hello world hi mazai fskfs dsfsf";
+
+// btn.onclick = () => {
+//   console.log(strin.split(" "));
+// };
 
 //t6
 
