@@ -13,14 +13,22 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t6
+//t7
 
-let strin = "helloworld";
+let strin = "hello world hi mazai fskfs dsfsf";
 
 btn.onclick = () => {
-    let arr = strin.split('');
-    console.log(arr);
-}
+  console.log(strin.split(" "));
+};
+
+//t6
+
+// let strin = "helloworld";
+
+// btn.onclick = () => {
+//     let arr = strin.split('');
+//     console.log(arr);
+// }
 
 //t4,5
 
