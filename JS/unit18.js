@@ -13,14 +13,31 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t8
+//t9
 
-let arr = [1,2,66,77,15];
+let arr = [
+  ['hi', 'mahai'],
+  ['test', 'best'],
+];
 
 btn.onclick = () => {
-  let str = arr.join('-');
+  let str = '';
+  arr.forEach(function (item){
+    item.forEach(function (elem){
+      str += `${elem} `;
+    })
+  })
   console.log(str);
-}
+};
+
+//t8
+
+// let arr = [1,2,66,77,15];
+
+// btn.onclick = () => {
+//   let str = arr.join('-');
+//   console.log(str);
+// }
 
 //t7
 
