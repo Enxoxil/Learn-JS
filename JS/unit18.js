@@ -13,30 +13,39 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t4
+//t6
 
-let pOut = document.querySelectorAll(".out");
-let flag = false;
+let strin = "helloworld";
 
 btn.onclick = () => {
-  pOut.forEach(function (item) {
-    item.addEventListener("click", function () {
-      func(item.getAttribute("id"));
-    });
-  });
-};
-
-function func(ide) {
-  if (flag == false) {
-    document.getElementById(`${ide}`).style.boxSizing = "border-box";
-    document.getElementById(`${ide}`).style.border = "1px solid black";
-    flag = true;
-  } else {
-    document.getElementById(`${ide}`).style.boxSizing = "border-box";
-    document.getElementById(`${ide}`).style.border = "none";
-    flag = false;
-  }
+    let arr = strin.split('');
+    console.log(arr);
 }
+
+//t4,5
+
+// let pOut = document.querySelectorAll(".out");
+// let flag = false;
+
+// btn.onclick = () => {
+//   pOut.forEach(function (item) {
+//     item.addEventListener("click", function () {
+//       func(item.getAttribute("id"));
+//     });
+//   });
+// };
+
+// function func(ide) {
+//   if (flag == false) {
+//     document.getElementById(`${ide}`).style.boxSizing = "border-box";
+//     document.getElementById(`${ide}`).style.border = "1px solid black";
+//     flag = true;
+//   } else {
+//     document.getElementById(`${ide}`).style.boxSizing = "border-box";
+//     document.getElementById(`${ide}`).style.border = "none";
+//     flag = false;
+//   }
+// }
 
 //t3
 
