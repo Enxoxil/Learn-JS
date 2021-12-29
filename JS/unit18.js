@@ -13,22 +13,34 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t9
 
-let arr = [
-  ['hi', 'mahai'],
-  ['test', 'best'],
-];
+//t10
+
+const obj = {name: 'ivan', age: 15, sex: 1, id: 45};
 
 btn.onclick = () => {
-  let str = '';
-  arr.forEach(function (item){
-    item.forEach(function (elem){
-      str += `${elem} `;
-    })
-  })
+  for (let key in obj){
+    str += `${key}=${obj[key]}&`;
+  }
   console.log(str);
-};
+}
+
+//t9
+
+// let arr = [
+//   ['hi', 'mahai'],
+//   ['test', 'best'],
+// ];
+
+// btn.onclick = () => {
+//   let str = '';
+//   arr.forEach(function (item){
+//     item.forEach(function (elem){
+//       str += `${elem} `;
+//     })
+//   })
+//   console.log(str);
+// };
 
 //t8
 
