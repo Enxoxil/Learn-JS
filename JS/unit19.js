@@ -13,15 +13,27 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+
+//t3
+let e = document.querySelector('#out2');
+let w = window.getComputedStyle(e).width;
+w = parseFloat(w);
+e.onclick = () => {
+
+  e.style.width = w + 'px';
+  w++;
+  e.textContent = w;
+}
+
 //t2
 
-btn1.onclick = (event) => {
-    for (let key in event) {
-        if (key == "altKey" && event[key] == true) {
-            console.log(event[key]);
-        }
-    }
-};
+// btn1.onclick = (event) => {
+//     for (let key in event) {
+//         if (key == "altKey" && event[key] == true) {
+//             console.log(event[key]);
+//         }
+//     }
+// };
 
 //t1
 
