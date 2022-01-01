@@ -1,7 +1,7 @@
 const btn = document.querySelector(".btn");
 const btn1 = document.querySelector(".btn1");
-let out = document.querySelector(".out");
-let out1 = document.querySelector(".out1");
+let out = document.querySelector("#out");
+let out1 = document.querySelector("#out1");
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
 let str = "";
@@ -13,17 +13,22 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t4
+
+out0.ondblclick = () => {
+  console.log(out0.textContent);
+}
 
 //t3
-let e = document.querySelector('#out2');
-let w = window.getComputedStyle(e).width;
-w = parseFloat(w);
-e.onclick = () => {
+// let e = document.querySelector('#out2');
+// let w = window.getComputedStyle(e).width;
+// w = parseFloat(w);
+// e.onclick = () => {
 
-  e.style.width = w + 'px';
-  w++;
-  e.textContent = w;
-}
+//   e.style.width = w + 'px';
+//   w++;
+//   e.textContent = w;
+// }
 
 //t2
 
