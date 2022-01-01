@@ -1,9 +1,13 @@
 const btn = document.querySelector(".btn");
 const btn1 = document.querySelector(".btn1");
-let out = document.querySelector("#out");
+
+let out0 = document.querySelector("#out0");
 let out1 = document.querySelector("#out1");
+let out2 = document.querySelector("#out2");
+
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
+
 let str = "";
 let str1 = "";
 
@@ -13,12 +17,32 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t8
+
+let check = document.querySelector(".checkbox");
+let outs = document.querySelectorAll(".out");
+let active = 0;
+check.onchange = () => {
+    for (let item of outs) {
+        item.classList.toggle("active");
+    }
+    active = document.querySelectorAll(".active");
+    for (let key of outs) {
+        key.oncontextmenu = () => {
+            if (out0.classList.contains("active")) {
+                console.log(true);
+                return false;
+            }
+        };
+    }
+};
+
 //t6,7
 
-out0.oncontextmenu = () => {
-  out0.classList.toggle('active');
-  return false;
-}
+// out0.oncontextmenu = () => {
+//   out0.classList.toggle('active');
+//   return false;
+// }
 
 //t5
 
