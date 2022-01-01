@@ -13,9 +13,19 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t2
+
+btn1.onclick = (event) => {
+    for (let key in event) {
+        if (key == "altKey" && event[key] == true) {
+            console.log(event[key]);
+        }
+    }
+};
+
 //t1
 
-function f1 (){
-    console.log(document.querySelector("#out0").textContent)
-}
-btn1.addEventListener('click', f1);
+// function f1 (){
+//     console.log(document.querySelector("#out0").textContent)
+// }
+// btn1.addEventListener('click', f1);

@@ -2,21 +2,21 @@
     background-color: rgb(153, 242, 252);
 }
 
-.container{
+.container {
     margin: 0 auto;
     max-width: 1920px;
     padding: 0 20px;
 }
-.inner{
+
+.inner {
     display: flex;
     justify-content: space-around;
     padding-top: 50px;
 }
-.out{
 
+.out {
     border: 1px solid black;
     min-width: 50px;
     min-height: 50px;
     text-align: center;
-    
 }
