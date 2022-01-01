@@ -13,12 +13,18 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t6,7
+
+out0.oncontextmenu = () => {
+  out0.classList.toggle('active');
+  return false;
+}
 
 //t5
 
-out0.ondblclick = () => {
-  out0.classList.toggle('active');
-}
+// out0.ondblclick = () => {
+//   out0.classList.toggle('active');
+// }
 
 //t4
 
