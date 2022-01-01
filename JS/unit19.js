@@ -17,21 +17,18 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t9
+
 //t8
 
-let check = document.querySelector(".checkbox");
+let check = document.querySelector("#checkbox");
 let outs = document.querySelectorAll(".out");
-let active = 0;
 check.onchange = () => {
-    for (let item of outs) {
-        item.classList.toggle("active");
-    }
-    active = document.querySelectorAll(".active");
     for (let key of outs) {
         key.oncontextmenu = () => {
-            if (out0.classList.contains("active")) {
-                console.log(true);
-                return false;
+            if (check.checked){
+              console.log(true);
+              return false;
             }
         };
     }
