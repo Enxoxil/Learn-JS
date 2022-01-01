@@ -13,3 +13,9 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t1
+
+function f1 (){
+    console.log(document.querySelector("#out0").textContent)
+}
+btn1.addEventListener('click', f1);
