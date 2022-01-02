@@ -20,11 +20,17 @@
     min-height: 50px;
     text-align: center;
 }
-.active{
-  background: rgba(255, 90, 90, 0.322);
 
-}
-#out1{
+.nonactive{
   background-image: url(../img/first.png);
-  
+  background-size: cover;
+}
+
+.active {
+  background-image: url(../img/second.png);
+  background-size: cover;
+}
+
+.border {
+  border: 5px solid red;;
 }

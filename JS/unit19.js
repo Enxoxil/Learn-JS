@@ -17,22 +17,45 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+
+//t10,11,12,13
+
+out1.onmouseover = () => {
+    out1.classList.add('active');
+    out1.classList.remove('nonactive');
+    out1.onmousedown = () => {
+        out1.classList.add('border');
+    }
+    out1.onmouseup = () => {
+        out1.classList.remove('border');
+    }
+};
+out1.onmouseout = () => {
+    out1.classList.remove('active');
+    out1.classList.add('nonactive');
+}
+
 //t9
+
+// out1.onclick = (event) => {
+//   event.srcElement.style.backgroundImage = "url(../img/second.png)";
+//   console.log(event);
+// };
 
 //t8
 
-let check = document.querySelector("#checkbox");
-let outs = document.querySelectorAll(".out");
-check.onchange = () => {
-    for (let key of outs) {
-        key.oncontextmenu = () => {
-            if (check.checked){
-              console.log(true);
-              return false;
-            }
-        };
-    }
-};
+// let check = document.querySelector("#checkbox");
+// let outs = document.querySelectorAll(".out");
+// check.onchange = () => {
+//     for (let key of outs) {
+//         key.oncontextmenu = () => {
+//             if (check.checked){
+//               console.log(true);
+//               return false;
+//             }
+//         };
+//     }
+// };
 
 //t6,7
 
