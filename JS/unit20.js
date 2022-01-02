@@ -17,5 +17,14 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
-//t1
+//t1,2
 
+input.onkeypress = (e) => {
+    // console.log(e);
+    console.log(e.code); // в любом случае в ENG расскладке
+    console.log(e.key); // в любой расскладке
+    console.log(e.charCode); // код
+    console.log(e.keyCode); // код
+    console.log(e.which) // код
+    out0.innerHTML = e.key;
+}
