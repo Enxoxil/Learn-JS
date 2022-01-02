@@ -1,9 +1,9 @@
 const btn = document.querySelector(".btn");
 const btn1 = document.querySelector(".btn1");
 
-let out0 = document.querySelector("#out0");
-let out1 = document.querySelector("#out1");
-let out2 = document.querySelector("#out2");
+// let out0 = document.querySelector("#out0");
+// let out1 = document.querySelector("#out1");
+// let out2 = document.querySelector("#out2");
 
 let input = document.querySelector(".input");
 let input1 = document.querySelector(".input1");
@@ -17,29 +17,41 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t11
+const keys = document.querySelectorAll(".out");
+input.onkeyup = (e) => {
+    for (let item of keys) {
+        item.classList.remove("active");
+        if (e.key == item.id) {
+            item.classList.add("active");
+            input.value = "";
+        }
+    }
+};
+
 //t3,4,5,6
 
-input.onkeyup = (e) => {
-    
-    if (
-        e.keyCode == '48' ||
-        e.keyCode == "49" ||
-        e.keyCode == "50" ||
-        e.keyCode == "51" ||
-        e.keyCode == "52" ||
-        e.keyCode == "53" ||
-        e.keyCode == "54" ||
-        e.keyCode == "55" ||
-        e.keyCode == "56" ||
-        e.keyCode == "57"
-    ) {
-        console.log(false);
-    } else {
-        console.log(input.value.toLowerCase());
-        console.log(input.value.toUpperCase());
-    }
-    
-};
+// input.onkeyup = (e) => {
+
+//     if (
+//         e.keyCode == '48' ||
+//         e.keyCode == "49" ||
+//         e.keyCode == "50" ||
+//         e.keyCode == "51" ||
+//         e.keyCode == "52" ||
+//         e.keyCode == "53" ||
+//         e.keyCode == "54" ||
+//         e.keyCode == "55" ||
+//         e.keyCode == "56" ||
+//         e.keyCode == "57"
+//     ) {
+//         console.log(false);
+//     } else {
+//         console.log(input.value.toLowerCase());
+//         console.log(input.value.toUpperCase());
+//     }
+
+// };
 
 //t1,2
 

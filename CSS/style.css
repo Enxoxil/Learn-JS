@@ -16,8 +16,8 @@
 
 .out {
     border: 1px solid black;
-    min-width: 50px;
-    min-height: 50px;
+    min-width: 30px;
+    min-height: 30px;
     text-align: center;
 }
 
@@ -26,9 +26,12 @@
   background-size: cover;
 }
 
-.active {
+/* .active {
   background-image: url(../img/second.png);
   background-size: cover;
+} */
+.active {
+  background-color: rgba(0, 255, 98, 0.411);
 }
 
 .border {
