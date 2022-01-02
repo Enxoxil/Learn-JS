@@ -17,14 +17,38 @@ let str1 = "";
 // refactor: change structure - без нового функционала и изменения поведения.
 // изменил форматирование, улучшил алгоритм, переложил файлы
 
+//t3,4,5,6
+
+input.onkeyup = (e) => {
+    
+    if (
+        e.keyCode == '48' ||
+        e.keyCode == "49" ||
+        e.keyCode == "50" ||
+        e.keyCode == "51" ||
+        e.keyCode == "52" ||
+        e.keyCode == "53" ||
+        e.keyCode == "54" ||
+        e.keyCode == "55" ||
+        e.keyCode == "56" ||
+        e.keyCode == "57"
+    ) {
+        console.log(false);
+    } else {
+        console.log(input.value.toLowerCase());
+        console.log(input.value.toUpperCase());
+    }
+    
+};
+
 //t1,2
 
-input.onkeypress = (e) => {
-    // console.log(e);
-    console.log(e.code); // в любом случае в ENG расскладке
-    console.log(e.key); // в любой расскладке
-    console.log(e.charCode); // код
-    console.log(e.keyCode); // код
-    console.log(e.which) // код
-    out0.innerHTML = e.key;
-}
+// input.onkeypress = (e) => {
+//     // console.log(e);
+//     console.log(e.code); // в любом случае в ENG расскладке
+//     console.log(e.key); // в любой расскладке
+//     console.log(e.charCode); // код
+//     console.log(e.keyCode); // код
+//     console.log(e.which) // код
+//     out0.innerHTML = e.key;
+// }
