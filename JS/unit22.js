@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 const btn = document.querySelector(".btn");
 const btn1 = document.querySelector(".btn1");
 
@@ -22,21 +22,20 @@ let str1 = "";
 
 //t3
 
-    btn.onclick = () => {
-try {
-        let s = 10;
-        str += s;
-        s + 10;
-      out3.innerHTML = str;  
-}
-catch (err) {
-    let div = document.createElement("div");
-    div.classList.add("out3");
-    container.appendChild(div);
-    console.log(str);
-    document.querySelector(".out3").innerHTML += str;
-}
-    };
-    
+//     btn.onclick = () => {
+// try {
+//         let s = 10;
+//         str += s;
+//         s + 10;
+//       out3.innerHTML = str;
+// }
+// catch (err) {
+//     let div = document.createElement("div");
+//     div.classList.add("out3");
+//     container.appendChild(div);
+//     console.log(str);
+//     document.querySelector(".out3").innerHTML += str;
+// }
+//     };
 
 
