@@ -24,6 +24,9 @@ function max(a, b) {
     this.textContent = (a > b) ? a : b;
 }
 
+window.onload = () => {
+    max.call(document.querySelector('.out-3'), 5 , 5);
+};
 // тут прописываете запуск
 
 // Task 4
