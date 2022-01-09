@@ -88,14 +88,28 @@ document.querySelector(".b-4").addEventListener("click", () => {
 });
 
 // Task 5.
-// Напишите рекурсивную функцию t5, которая генерирует целое число от 0 до 10 ( с помощью randomInteger) и добавляем его в массив ar5. Проверяет, если сумма элементов массива больше 30 - то прекращает свою работу, если меньше - запускается заново. Возвращает массив ar5 по результату работы.
+// Напишите рекурсивную функцию t5, которая генерирует целое число от 0 до 10 ( с помощью randomInteger) и добавляем его в массив
+// ar5. Проверяет, если сумма элементов массива больше 30 - то прекращает свою работу, если меньше - запускается заново.
+// Возвращает массив ar5 по результату работы.
 
-let ar5 = [];
+function d3() {
+  let ar5 = [];
+  let str = 0;
+  t5();
 
-function t5() {}
+  function t5() {
+    let nums = randomInteger(0, 10);
+    ar5.push(nums);
+    str = str + nums;
+    console.log(str, ar5);
+
+    if (str >= 30) return;
+    t5();
+  }
+}
 
 document.querySelector(".b-5").addEventListener("click", () => {
-  document.querySelector(".out-5").textContent = t5();
+  document.querySelector(".out-5").textContent = d3();
 });
 
 // Task 6.
