@@ -47,19 +47,33 @@ document.querySelector('.b-2').addEventListener('click', () => {
 });
 
 // Task 3.
-// Функция t3 принимает аргумент 'odd' или 'even' и должна возвратить четное или не четное число в диапазоне от 0 до 100. Решите задачу рекурсивно. Для генерации случайных чисел используйте функцию randomInteger.
+// Функция t3 принимает аргумент 'odd' или 'even' и должна возвратить четное или не четное число в диапазоне от 0 до 100.
+// Решите задачу рекурсивно. Для генерации случайных чисел используйте функцию randomInteger.
 
 function randomInteger(min, max) {
     let rand = min + Math.random() * (max + 1 - min);
     return Math.floor(rand);
 }
 
-function t3(arg) {
+function t3(arg) { 
+    r1();
+    
+    function r1(){
+        let num = randomInteger(0, 100);
+        if(num % 2 == 0 && arg == 'even') {
+            return console.log(num);
+        }
+        if (num % 2 != 0 && arg == 'odd') {
+            return console.log(num);
+        }
+        r1();
 
+    }
+    
 }
 
 document.querySelector('.b-3').addEventListener('click', () => {
-    document.querySelector('.out-3').textContent = t3('even');
+    document.querySelector('.out-3').textContent = t3('odd');
 });
 
 // Task 4.
