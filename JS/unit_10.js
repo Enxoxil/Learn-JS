@@ -125,13 +125,28 @@ let ar6 = [
   9,
   [[[[[10, "i", 11, [12]]]]]],
 ];
-let ar6_res = [];
 
-function t6(arr) {}
+let ar6res = [];
+function searchOfArray(arr) {
+  for (let item of arr) {
+    t6(item);
+  }
+  function t6(item) {
+    if (typeof item == "string") {
+      return ar6res.push(item);
+    } else if (typeof item == "object") {
+      for (let item2 of item) {
+        t6(item2);
+      }
+    }
+  }
+console.log(ar6res);  
+}
+
 
 document.querySelector(".b-6").addEventListener("click", () => {
-  t6(ar6);
-  document.querySelector(".out-6").textContent = ar6_res;
+  searchOfArray(ar6);
+  document.querySelector(".out-6").textContent = ar6res;
 });
 
 // Task 7.
