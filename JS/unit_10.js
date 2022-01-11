@@ -140,12 +140,11 @@ function searchOfArray(arr) {
       }
     }
   }
-console.log(ar6res);  
+  console.log(ar6res);
 }
 
-
 document.querySelector(".b-6").addEventListener("click", () => {
-  searchOfArray(ar6);
+  searchOfArray(ar7);
   document.querySelector(".out-6").textContent = ar6res;
 });
 
@@ -163,9 +162,27 @@ document.querySelector(".b-7").addEventListener("click", () => {
 });
 
 // Task 8.
-// Напишите рекурсивную функцию t8, которая получает с помощью randomInt целое число от 1000 до 9000 и проверяет если сумма первых двух цифр числа равна сумме 3 и 4 числа то возвращает это число. Если нет - повторяет операцию. Например число 1235 не удовлетворяет этому условию, потому что 1+2 не равно 3+5. А вот число 7180  - удовлетворяет.
+// Напишите рекурсивную функцию t8, которая получает с помощью randomInt целое число от 1000 до 9000 и проверяет если сумма
+// первых двух цифр числа равна сумме 3 и 4 числа то возвращает это число.
+// Если нет - повторяет операцию. Например число 1235 не удовлетворяет этому условию, потому что 1+2 не равно 3+5.
+// А вот число 7180  - удовлетворяет.
 
-function t8() {}
+function randomInteger(min, max) {
+  let rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+}
+
+function t8() {
+  let arr = randomInteger(1000, 9000).toString().split("");
+  return calculate(arr);
+  function calculate(...array) {
+    if (+array[0][0] + +array[0][1] !== +array[0][2] + +array[0][3]) {
+      return t8();
+    } else {
+      return array.flat().join('');
+    }
+  }
+}
 
 document.querySelector(".b-8").addEventListener("click", () => {
   document.querySelector(".out-8").textContent = t8();
