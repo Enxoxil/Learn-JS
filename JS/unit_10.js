@@ -174,12 +174,12 @@ function randomInteger(min, max) {
 
 function t8() {
   let arr = randomInteger(1000, 9000).toString().split("");
-  return calculate(arr);
+  return calculate(...arr);
   function calculate(...array) {
-    if (+array[0][0] + +array[0][1] !== +array[0][2] + +array[0][3]) {
+    if (+array[0] + +array[1] !== +array[2] + +array[3]) {
       return t8();
     } else {
-      return array.flat().join('');
+      return array.join("");
     }
   }
 }
@@ -187,7 +187,6 @@ function t8() {
 document.querySelector(".b-8").addEventListener("click", () => {
   document.querySelector(".out-8").textContent = t8();
 });
-
 // Task 9.
 // Напишите рекурсивную функцию t9, которая создает массив ar9_res состоящий из возраста (age) пользователей прописанных в ar9.
 
@@ -222,15 +221,27 @@ let ar9 = {
   },
 };
 
-let ar9_res = [];
+let ar9Res = [];
+function t9(obj) {
+  for (let key in obj) {
+    getAge(obj[key]);
+  }
 
-function t9(obj) {}
+  function getAge(param){
+    if (param.age !== undefined){
+      console.log(param.age);
+      ar9Res.push(param.age);
+    }
+    if (param.parent !== undefined){
+      console.log(param.parent);
+      t9(param.parent);
+    }
+  }
+}
 
 document.querySelector(".b-9").addEventListener("click", () => {
-  for (let key in ar9) {
-    t9(ar9[key]);
-  }
-  document.querySelector(".out-9").innerHTML = ar9_res;
+  t9(ar9);
+  document.querySelector(".out-9").innerHTML = ar9Res;
 });
 
 // Task 10.
