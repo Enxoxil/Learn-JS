@@ -283,13 +283,22 @@ let ar10 = {
   },
 };
 
-let ar10_res = [];
+let ar10res = [];
 
-function t10(k, obj) {}
+function t10 (obj) {
+  for (let key in obj){
+    console.log(ar10res);
+    if (obj[key].age == undefined){
+      ar10res.push(key);
+    }
+    if (obj[key].parent !== undefined){
+      console.log(obj[key].parent);
+      return t10 (obj[key].parent);
+    }
+  }
+}
 
 document.querySelector(".b-10").addEventListener("click", () => {
-  for (let key in ar10) {
-    t9(key, ar10[key]);
-  }
-  document.querySelector(".out-19").innerHTML = ar10_res;
+  t10(ar10);
+  document.querySelector(".out-10").innerHTML = ar10res;
 });
